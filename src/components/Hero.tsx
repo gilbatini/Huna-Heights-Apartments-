@@ -36,12 +36,15 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking
     <section id="hero" className="relative min-h-screen w-full flex flex-col justify-between pt-24 sm:pt-28 pb-12 sm:pb-16 overflow-hidden bg-[#08090b]">
       {/* Background Graphic & Visual Frame with HUNA HEIGHTS wording */}
       <div className="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/images/cabin-obsidian-dusk.jpg" />
         <img
           src="/images/huna-heights-hero.jpg"
           alt="HUNA HEIGHTS floating luxury architectural cabin on water"
           className="w-full h-full object-cover object-center scale-[1.01]"
           referrerPolicy="no-referrer"
         />
+        </picture>
         {/* Subtle depth overlays for high contrast legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#08090b] via-transparent to-black/50" />
         <div className="absolute inset-0 bg-black/20" />
@@ -68,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking
             >
               <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-neutral-900">
                 <img
-                  src="/images/huna-heights-hero.jpg"
+                  src="/images/cabin-obsidian-dusk.jpg"
                   alt="Discover our latest cabins"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

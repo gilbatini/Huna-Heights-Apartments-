@@ -60,7 +60,7 @@ export const ArchitecturalShowcase: React.FC<ArchitecturalShowcaseProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#0d0f14] border border-white/10 rounded-3xl p-6 sm:p-8 lg:p-10">
           {/* Left Column: Visual focal point */}
           <div className="lg:col-span-7 flex flex-col justify-between">
-            <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-black group">
+            <div className="relative aspect-[16/10] lg:aspect-auto lg:flex-1 lg:min-h-[380px] w-full rounded-2xl overflow-hidden bg-black group">
               <img
                 src={activeCabin.heroImage}
                 alt={activeCabin.name}

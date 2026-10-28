@@ -15,9 +15,9 @@ export const CABINS: Cabin[] = [
     sqft: 1850,
     description:
       'Perched weightlessly over a secluded private spring lake in the cool, misty tea ridges of Tigoni—just 35 minutes from Nairobi. Clad in artisanal charred cedar (Shou Sugi Ban) with 270-degree acoustic glass, it provides uninterrupted communion with highland mists, indigenous bamboo groves, and mirror-still waters.',
-    heroImage: '/images/huna-heights-hero.jpg',
+    heroImage: '/images/cabin-obsidian-dusk.jpg',
     images: [
-      '/images/huna-heights-hero.jpg',
+      '/images/cabin-obsidian-dusk.jpg',
       '/images/cabin-interior-lounge.jpg',
       '/images/cabin-bedroom-morning.jpg',
       '/images/cabin-sauna-deck.jpg',
@@ -127,7 +127,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'gal-1',
     title: 'Huna Heights Floating Monolith at Dusk',
     category: 'architecture',
-    src: '/images/huna-heights-hero.jpg',
+    src: '/images/cabin-obsidian-dusk.jpg',
     aspect: 'aspect-[16/10]',
     caption: 'Cantilevered architectural timber pavilion reflecting over calm highland waters in Tigoni, Nairobi.',
     details: 'Yakisugi charred wood exterior · 270° Glazing · Zero water disturbance',
@@ -167,15 +167,6 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     aspect: 'aspect-[16/9]',
     caption: 'Handcrafted basalt stone monolith island with slender brass pendant lights framing the misty evergreen backdrop.',
     details: 'Brushed Kenyan basalt · Induction suite · Smoked oak dining table',
-  },
-  {
-    id: 'gal-6',
-    title: 'Huna Heights Twilight Water Geometry',
-    category: 'nightfall',
-    src: '/images/cabin-twilight-monolith.png',
-    aspect: 'aspect-[4/3]',
-    caption: 'Warm ambient glow spilling across the calm lake surface under the equatorial night sky.',
-    details: '3000K warm interior warmth · Glare-free marine orientation',
   },
 ];
 
