@@ -45,7 +45,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenBooking, onOpe
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between gap-4">
           {/* Left Navigation Zone - matching reference */}
-          <nav className="flex items-center gap-6 sm:gap-8">
+          <button
+            onClick={() => handleLinkClick(navLinks[0].target)}
+            className="md:hidden font-serif-editorial text-lg tracking-wider text-white whitespace-nowrap cursor-pointer"
+          >
+            HUNA HEIGHTS
+          </button>
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.label}

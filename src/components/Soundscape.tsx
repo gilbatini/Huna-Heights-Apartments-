@@ -97,7 +97,7 @@ export const Soundscape: React.FC = () => {
     <button
       onClick={toggleSound}
       title={isPlaying ? 'Mute ambient sound' : 'Play ambient sound'}
-      className="group relative flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all text-xs font-medium text-neutral-300 hover:text-white"
+      className="group relative flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all text-xs font-medium text-neutral-300 hover:text-white"
     >
       {isPlaying ? (
         <>
