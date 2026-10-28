@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking
       {/* Background Graphic & Visual Frame with HUNA HEIGHTS wording */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/huna_heights_hero_1793195294156.jpg"
+          src="/images/huna-heights-hero.jpg"
           alt="HUNA HEIGHTS floating luxury architectural cabin on water"
           className="w-full h-full object-cover object-center scale-[1.01]"
           referrerPolicy="no-referrer"
@@ -68,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking
             >
               <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-neutral-900">
                 <img
-                  src="/src/assets/images/huna_heights_hero_1793195294156.jpg"
+                  src="/images/huna-heights-hero.jpg"
                   alt="Discover our latest cabins"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

@@ -38,7 +38,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, onBookN
         {/* Cinematic Preview & Visualizer */}
         <div className="relative aspect-video w-full bg-black overflow-hidden group">
           <img
-            src="/src/assets/images/huna_heights_hero_1793195294156.jpg"
+            src="/images/huna-heights-hero.jpg"
             alt="HUNA HEIGHTS luxury cabin floating on twilight lake"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
