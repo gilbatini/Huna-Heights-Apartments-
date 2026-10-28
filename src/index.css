@@ -1,35 +1,34 @@
 @import "tailwindcss";
 
+:root {
+  --stone: #f5f2ec;
+  --sand: #ebe5db;
+  --navy: #0f1b33;
+  --copper: #b85a2e;
+  --ink: #1d2433;
+}
+
 @layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
   body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Rubik', system-ui, -apple-system, sans-serif;
+    background: var(--stone);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
   }
+  ::selection { background: var(--navy); color: #fff; }
 }
 
-.font-serif-editorial {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+.font-display {
+  font-family: 'Barlow Condensed', 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
-.font-display-italiana {
-  font-family: 'Italiana', 'Cormorant Garamond', serif;
+/* The brochure's diagonal stripe, used once at the hero edge and footer */
+.stripe {
+  background: repeating-linear-gradient(-55deg, var(--navy) 0 14px, var(--copper) 14px 18px, var(--navy) 18px 32px);
 }
 
-.font-sans-clean {
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-}
-
-/* Custom subtle scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #08090b;
-}
-::-webkit-scrollbar-thumb {
-  background: #232730;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #3b414f;
+.placeholder-lines {
+  background-image: repeating-linear-gradient(-55deg, transparent 0 22px, rgba(15, 27, 51, 0.035) 22px 23px);
 }
