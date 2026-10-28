@@ -1,6 +1,6 @@
 {
   "name": "Huna Heights Apartments | Modern apartments in Nairobi",
-  "description": "Modern apartments in Nairobi for long-term leasing, plus a furnished two-bedroom residence for short stays. Book a viewing or chat with us on WhatsApp.",
+  "description": "Modern apartments in Nairobi for long-term leasing, plus a furnished two-bedroom residence for short stays.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
