@@ -134,7 +134,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenBooking, onOpe
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-50 bg-[#08090b]/98 backdrop-blur-xl flex flex-col justify-between p-6 sm:p-12 animate-in fade-in duration-200">
           <div className="flex items-center justify-between">
-            <span className="font-serif-editorial text-2xl tracking-wider text-white">bincabnb</span>
+            <span className="font-serif-editorial text-2xl tracking-wider text-white">HUNA HEIGHTS</span>
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="p-2.5 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors"

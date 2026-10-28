@@ -23,7 +23,7 @@ export const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-6 space-y-6 text-sm text-neutral-300 font-light leading-relaxed">
             <p className="text-base text-neutral-100 font-normal">
-              bincabnb was conceived by architects and environmentalists with a solitary conviction: modern luxury should not dominate nature—it should listen to it.
+              Huna Heights was conceived by architects and environmentalists with a solitary conviction: modern luxury should not dominate nature—it should listen to it.
             </p>
             <p>
               Each cabin is fabricated off-site using sustainably harvested cedar treated with Shou Sugi Ban, an ancient Japanese charring ritual that immunizes timber against moisture and insects without synthetic chemical coatings.

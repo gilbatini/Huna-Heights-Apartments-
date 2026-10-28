@@ -64,7 +64,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 Concierge Liaison
               </span>
               <h3 className="text-2xl font-serif-editorial text-white">
-                Contact the bincabnb Curators
+                Contact the Huna Heights Curators
               </h3>
               <p className="text-xs text-neutral-400 font-light mt-1">
                 For private helicopter arrivals, property buyout inquiries, or custom itineraries.
@@ -132,7 +132,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
             </form>
 
             <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-neutral-500 font-light">
-              <span>Direct: concierge@bincabnb.com</span>
+              <span>Direct: concierge@hunaheights.com</span>
               <span>Available 24/7 UTC</span>
             </div>
           </div>

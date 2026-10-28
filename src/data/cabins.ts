@@ -15,9 +15,9 @@ export const CABINS: Cabin[] = [
     sqft: 1850,
     description:
       'Perched weightlessly over reflective glacial waters, The Obsidian Pavilion embodies pure biophilic minimalism. Clad in artisanal charred cedar (Shou Sugi Ban) with 270-degree acoustic acoustic glass, it provides uninterrupted communion with mountain mists and silent waters.',
-    heroImage: '/assets/aistudio/imgi_93_5ab873255209595.6a9980e55fc17_974661a9.png',
+    heroImage: '/src/assets/images/huna_heights_hero_1793195294156.jpg',
     images: [
-      '/assets/aistudio/imgi_93_5ab873255209595.6a9980e55fc17_974661a9.png',
+      '/src/assets/images/huna_heights_hero_1793195294156.jpg',
       '/src/assets/images/cabin_interior_lounge_1793190492660.jpg',
       '/src/assets/images/cabin_bedroom_morning_1793190494030.jpg',
       '/src/assets/images/cabin_sauna_deck_1793190494974.jpg',
@@ -125,11 +125,11 @@ export const CABINS: Cabin[] = [
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
     id: 'gal-1',
-    title: 'The Floating Obsidian Monolith at Dusk',
+    title: 'Huna Heights Floating Monolith at Dusk',
     category: 'architecture',
-    src: '/assets/aistudio/imgi_93_5ab873255209595.6a9980e55fc17_974661a9.png',
+    src: '/src/assets/images/huna_heights_hero_1793195294156.jpg',
     aspect: 'aspect-[16/10]',
-    caption: 'Cantilevered architectural timber pavilion reflecting over calm mountain lake at dusk.',
+    caption: 'Cantilevered architectural timber pavilion reflecting over calm mountain lake under night skies.',
     details: 'Yakisugi charred wood exterior · 270° Glazing · Zero water disturbance',
   },
   {
@@ -170,9 +170,9 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: 'gal-6',
-    title: 'Twilight Water Geometry & Architecture',
+    title: 'Huna Heights Twilight Water Geometry',
     category: 'nightfall',
-    src: '/assets/aistudio/imgi_93_5ab873255209595.6a9980e55fc17_974661a9.png',
+    src: '/src/assets/images/huna_heights_hero_1793195294156.jpg',
     aspect: 'aspect-[4/3]',
     caption: 'Warm ambient glow spilling across the calm lake surface under twilight skies.',
     details: '3000K warm interior warmth · Glare-free marine orientation',
@@ -217,7 +217,7 @@ export const PRESS_ACCOLADES = [
   },
   {
     publication: 'Dwell Magazine',
-    quote: 'bincabnb sets a new world standard for minimalist sanctuaries immersed in nature.',
+    quote: 'Huna Heights sets a new world standard for minimalist sanctuaries immersed in nature.',
   },
   {
     publication: 'Wallpaper*',

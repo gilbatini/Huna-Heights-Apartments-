@@ -20,15 +20,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking, onOpe
           {/* Brand info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-2">
-              <span className="font-serif-editorial text-2xl text-white tracking-wider">bincabnb</span>
-              <span className="font-serif-editorial italic text-sm text-neutral-400">real estate</span>
+              <span className="font-serif-editorial text-2xl text-white tracking-wider">HUNA HEIGHTS</span>
+              <span className="font-serif-editorial italic text-sm text-neutral-400">sanctuaries</span>
             </div>
             <p className="text-xs text-neutral-400 max-w-sm font-light leading-relaxed">
               Curated luxury architectural cabins floating over serene mountain waters. Created for stillness, seclusion, and deep connection to wild landscapes.
             </p>
             <div className="text-xs text-neutral-500 space-y-1">
               <p>Tawangmangu · Lake Como · Lofoten Archipelagos</p>
-              <p>Inquiries: reservations@bincabnb.com</p>
+              <p>Inquiries: reservations@hunaheights.com</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking, onOpe
         {/* Bottom row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <div>
-            © {new Date().getFullYear()} bincabnb Sanctuary Group. All rights reserved.
+            © {new Date().getFullYear()} Huna Heights Sanctuary Group. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <span className="hover:text-neutral-400 cursor-pointer">Privacy Charter</span>

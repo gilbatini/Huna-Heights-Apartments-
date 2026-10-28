@@ -23,7 +23,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, onBookN
             <span className="text-white/20">|</span>
             <span className="text-sm text-neutral-200 font-medium flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-neutral-400" />
-              The Obsidian Pavilion · Tawangmangu
+              Huna Heights · Alpine Lake Sanctuary
             </span>
           </div>
           <button
@@ -38,8 +38,8 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, onBookN
         {/* Cinematic Preview & Visualizer */}
         <div className="relative aspect-video w-full bg-black overflow-hidden group">
           <img
-            src="/assets/aistudio/imgi_93_5ab873255209595.6a9980e55fc17_974661a9.png"
-            alt="The Obsidian Pavilion floating on twilight lake"
+            src="/src/assets/images/huna_heights_hero_1793195294156.jpg"
+            alt="HUNA HEIGHTS luxury cabin floating on twilight lake"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
 

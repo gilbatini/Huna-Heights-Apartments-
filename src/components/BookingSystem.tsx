@@ -141,7 +141,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
     if (!confirmation) return '#';
     const title = encodeURIComponent(`Stay at ${confirmation.cabin.name}`);
     const details = encodeURIComponent(
-      `Booking Reference: ${confirmation.bookingId}\nLocation: ${confirmation.cabin.location}\nGuests: ${confirmation.guests}\nDirect Concierge: concierge@bincabnb.com`
+      `Booking Reference: ${confirmation.bookingId}\nLocation: ${confirmation.cabin.location}\nGuests: ${confirmation.guests}\nDirect Concierge: concierge@hunaheights.com`
     );
     const location = encodeURIComponent(confirmation.cabin.location);
     const sDate = confirmation.checkIn.replace(/-/g, '') + 'T150000Z';
@@ -164,7 +164,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
             </h2>
           </div>
           <p className="text-neutral-400 text-sm max-w-md font-light leading-relaxed">
-            Reserve direct with bincabnb for guaranteed panoramic water vistas, private pontoon access, and personalized wilderness concierge service.
+            Reserve direct with Huna Heights for guaranteed panoramic water vistas, private pontoon access, and personalized wilderness concierge service.
           </p>
         </div>
 
