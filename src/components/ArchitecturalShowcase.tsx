@@ -35,7 +35,7 @@ export const ArchitecturalShowcase: React.FC<ArchitecturalShowcaseProps> = ({
             </h2>
           </div>
           <p className="text-neutral-400 text-sm max-w-md font-light leading-relaxed">
-            Every pavilion is custom-engineered to float weightlessly above secluded alpine lakes, honoring the natural topography with quiet, sustainable precision.
+            Every pavilion is custom-engineered to float weightlessly above Nairobi’s secluded highland lakes and Rift Valley waters, honoring Kenya’s natural topography with quiet, sustainable precision.
           </p>
         </div>
 

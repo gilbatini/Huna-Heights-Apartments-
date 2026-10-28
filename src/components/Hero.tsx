@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking }) => {
-  const [destination, setDestination] = useState('Tawangmangu');
+  const [destination, setDestination] = useState('Tigoni, Nairobi');
   const [isDestOpen, setIsDestOpen] = useState(false);
   const [checkInDate, setCheckInDate] = useState('June 21, 2026');
   const [isDateOpen, setIsDateOpen] = useState(false);
@@ -17,9 +17,9 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking
   const [isGuestsOpen, setIsGuestsOpen] = useState(false);
 
   const destinationsList = [
-    { name: 'Tawangmangu', region: 'Central Java', desc: 'Obsidian Lake Monolith' },
-    { name: 'Lofoten Archipelagos', region: 'Norway', desc: 'Fjord Horizon Monolith' },
-    { name: 'Lake Como', region: 'Northern Italy', desc: 'Solitude Cypress Pavilion' },
+    { name: 'Tigoni, Nairobi', region: 'Highlands', desc: 'Obsidian Lake Monolith' },
+    { name: 'Lake Naivasha', region: 'Rift Valley', desc: 'Oloiden Horizon Monolith' },
+    { name: 'Ngong Hills', region: 'Greater Nairobi', desc: 'Ridge Forest Pavilion' },
   ];
 
   const handleSearchClick = () => {
@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onOpenVideo, onOpenBooking
           {/* Right Column: Narrative intro copy matching reference */}
           <div className="lg:col-span-5 flex flex-col lg:items-end justify-end">
             <p className="text-neutral-200 text-sm sm:text-base font-light leading-relaxed max-w-sm lg:text-right drop-shadow">
-              Unwind in handpicked luxury cabins surrounded by forests, mountains, and breathtaking views.
+              Unwind in handpicked luxury cabins surrounded by Nairobi's misty highlands, tea estates, and Great Rift Valley views.
             </p>
           </div>
         </div>

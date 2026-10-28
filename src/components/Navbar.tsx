@@ -179,7 +179,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenBooking, onOpe
               </button>
             </div>
             <p className="text-xs text-neutral-500 font-light">
-              Tawangmangu · Lake Como · Lofoten Archipelagos
+              Tigoni, Nairobi · Lake Naivasha · Ngong Hills, Kenya
             </p>
           </div>
         </div>

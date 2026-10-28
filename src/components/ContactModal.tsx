@@ -104,7 +104,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white cursor-pointer"
                 >
                   <option value="Stay Consultation">Stay Consultation & Availability</option>
-                  <option value="Helicopter Transfer">Helicopter or Private Boat Transfer</option>
+                  <option value="Helicopter Transfer">Wilson Airport (Nairobi) Helicopter or Chauffeur Transfer</option>
                   <option value="Full Retreat Buyout">Full Retreat Buyout (All Cabins)</option>
                   <option value="Architectural Press">Architectural Press & Filming</option>
                 </select>
@@ -115,7 +115,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 <textarea
                   rows={3}
                   required
-                  placeholder="Tell us about your requested dates, guest party, or special arrangements..."
+                  placeholder="Wilson Airport / JKIA arrival time, safari connection, private chef dietary preferences..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"

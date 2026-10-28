@@ -40,11 +40,11 @@ export default function App() {
 
   const handleSearch = (search: BookingSearch) => {
     // If the search specified a known destination, select the matching cabin
-    if (search.destination.includes('Lofoten')) {
-      const c = CABINS.find((item) => item.id.includes('lofoten')) || CABINS[1];
+    if (search.destination.includes('Naivasha')) {
+      const c = CABINS.find((item) => item.id.includes('naivasha')) || CABINS[1];
       setSelectedCabin(c);
-    } else if (search.destination.includes('Como')) {
-      const c = CABINS.find((item) => item.id.includes('como')) || CABINS[2];
+    } else if (search.destination.includes('Ngong')) {
+      const c = CABINS.find((item) => item.id.includes('ngong')) || CABINS[2];
       setSelectedCabin(c);
     } else {
       setSelectedCabin(CABINS[0]);

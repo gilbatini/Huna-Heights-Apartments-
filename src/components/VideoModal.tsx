@@ -23,7 +23,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, onBookN
             <span className="text-white/20">|</span>
             <span className="text-sm text-neutral-200 font-medium flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-neutral-400" />
-              Huna Heights · Alpine Lake Sanctuary
+              Huna Heights · Tigoni, Nairobi
             </span>
           </div>
           <button
@@ -54,7 +54,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, onBookN
                 Where Structure Dissolves into Water
               </h3>
               <p className="text-sm text-neutral-300 max-w-lg mt-1 font-light leading-relaxed">
-                Experience the 270-degree acoustic horizon, hand-charred cedar cladding, and floating foundation engineered for absolute stillness.
+                Experience the 270-degree acoustic horizon, hand-charred cedar cladding, and floating foundation engineered for absolute stillness in the Nairobi highlands.
               </p>
             </div>
             <div className="flex items-center gap-3 shrink-0">
@@ -79,7 +79,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, onBookN
           </div>
           <div>
             <span className="block text-neutral-500 uppercase tracking-wider text-[10px]">Elevation</span>
-            <span className="text-neutral-200 font-medium">1,200m Above Sea Level</span>
+            <span className="text-neutral-200 font-medium">2,200m (Tigoni Highlands)</span>
           </div>
           <div>
             <span className="block text-neutral-500 uppercase tracking-wider text-[10px]">Acoustic Rating</span>

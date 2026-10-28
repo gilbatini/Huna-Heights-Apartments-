@@ -23,13 +23,13 @@ export const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-6 space-y-6 text-sm text-neutral-300 font-light leading-relaxed">
             <p className="text-base text-neutral-100 font-normal">
-              Huna Heights was conceived by architects and environmentalists with a solitary conviction: modern luxury should not dominate nature—it should listen to it.
+              Huna Heights was conceived by Kenyan architects and environmentalists with a solitary conviction: modern architectural luxury should not dominate East Africa’s wild topography—it should listen to it.
             </p>
             <p>
-              Each cabin is fabricated off-site using sustainably harvested cedar treated with Shou Sugi Ban, an ancient Japanese charring ritual that immunizes timber against moisture and insects without synthetic chemical coatings.
+              Tucked within the misty, emerald tea ridges of Tigoni just 35 minutes outside Nairobi, each cabin is built from sustainably harvested East African cedar timber treated with Shou Sugi Ban, an ancient charring ritual that immunizes wood naturally against equatorial highland moisture without toxic chemical sealants.
             </p>
             <p>
-              Our floating foundation system eliminates conventional concrete trenching. Resting on submerged micro-pylons, the structures sway gently with the rhythmic surface of the lake, leaving underwater ecosystems undisturbed and alive.
+              Our floating foundation system eliminates conventional heavy trenching on fragile watershed slopes. Resting on submerged micro-pylons, each structure sways imperceptibly with the tranquil surface of the water, leaving indigenous aquatic habitats and surrounding bamboo forests completely undisturbed.
             </p>
           </div>
 

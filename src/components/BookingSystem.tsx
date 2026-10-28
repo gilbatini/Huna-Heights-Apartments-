@@ -445,7 +445,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                   <label className="block text-[11px] text-neutral-400 mb-1 font-light">Contact Number</label>
                   <input
                     type="tel"
-                    placeholder="e.g. +1 (555) 019-2834"
+                    placeholder="e.g. +254 712 345 678"
                     value={guestPhone}
                     onChange={(e) => setGuestPhone(e.target.value)}
                     className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
@@ -461,7 +461,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                   </label>
                   <textarea
                     rows={2}
-                    placeholder="Boat shuttle coordination, private chef dietary allergies..."
+                    placeholder="Nairobi chauffeur coordination, Wilson Airport transfer, private chef dietary preferences..."
                     value={specialRequests}
                     onChange={(e) => setSpecialRequests(e.target.value)}
                     className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"

@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking, onOpe
               Curated luxury architectural cabins floating over serene mountain waters. Created for stillness, seclusion, and deep connection to wild landscapes.
             </p>
             <div className="text-xs text-neutral-500 space-y-1">
-              <p>Tawangmangu · Lake Como · Lofoten Archipelagos</p>
+              <p>Tigoni, Nairobi · Lake Naivasha · Ngong Hills, Kenya</p>
               <p>Inquiries: reservations@hunaheights.com</p>
             </div>
           </div>
