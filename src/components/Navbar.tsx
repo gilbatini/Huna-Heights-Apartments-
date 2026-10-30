@@ -25,6 +25,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenBooking, onOpe
   const navLinks = [
     { label: 'Home', target: 'hero' },
     { label: 'Residences', target: 'discover' },
+    { label: 'Availability', target: 'availability' },
+    { label: 'Amenities', target: 'amenities' },
     { label: 'About Us', target: 'about' },
     { label: 'Gallery', target: 'gallery' },
   ];

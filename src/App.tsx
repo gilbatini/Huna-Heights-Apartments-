@@ -9,6 +9,8 @@ import { Hero } from './components/Hero';
 import { TrustBar } from './components/TrustBar';
 import { ArchitecturalShowcase } from './components/ArchitecturalShowcase';
 import { GallerySection } from './components/GallerySection';
+import { AvailabilitySection } from './components/AvailabilitySection';
+import { AmenitiesSection } from './components/AmenitiesSection';
 import { BookingSystem } from './components/BookingSystem';
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
@@ -88,8 +90,14 @@ export default function App() {
           onOpenBooking={handleOpenBooking}
         />
 
+        {/* Unit-by-unit availability */}
+        <AvailabilitySection />
+
         {/* High-Quality Image Gallery */}
         <GallerySection />
+
+        {/* Amenities and resident services */}
+        <AmenitiesSection />
 
         {/* Interactive Booking System */}
         <BookingSystem

@@ -1,0 +1,733 @@
+{
+  "rates": {
+    "asOf": "2026-10-30",
+    "gbpToKes": 173.066223,
+    "gbpToUsd": 1.334844
+  },
+  "units": [
+    {
+      "number": "1509",
+      "type": "1 Bedroom",
+      "floor": 15,
+      "sizeSqm": 78.41,
+      "sizeSqft": 844,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "status": "reserved",
+      "rentPerMonth": null
+    },
+    {
+      "number": "1504",
+      "type": "1 Bedroom",
+      "floor": 15,
+      "sizeSqm": 76.18,
+      "sizeSqft": 820,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 791000,
+        "usd": 6100
+      }
+    },
+    {
+      "number": "1306",
+      "type": "1 Bedroom",
+      "floor": 13,
+      "sizeSqm": 55,
+      "sizeSqft": 592,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "1104",
+      "type": "1 Bedroom",
+      "floor": 11,
+      "sizeSqm": 77.3,
+      "sizeSqft": 832,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "707",
+      "type": "1 Bedroom",
+      "floor": 7,
+      "sizeSqm": 52.12,
+      "sizeSqft": 561,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "605",
+      "type": "1 Bedroom",
+      "floor": 6,
+      "sizeSqm": 61.78,
+      "sizeSqft": 665,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "status": "reserved",
+      "rentPerMonth": null
+    },
+    {
+      "number": "2605",
+      "type": "2 Bedroom",
+      "floor": 26,
+      "sizeSqm": 89.09,
+      "sizeSqft": 959,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "2406",
+      "type": "2 Bedroom",
+      "floor": 24,
+      "sizeSqm": 104.61,
+      "sizeSqft": 1126,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1196000,
+        "usd": 9230
+      }
+    },
+    {
+      "number": "2403",
+      "type": "2 Bedroom",
+      "floor": 24,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1174000,
+        "usd": 9050
+      }
+    },
+    {
+      "number": "2402",
+      "type": "2 Bedroom",
+      "floor": 24,
+      "sizeSqm": 95.23,
+      "sizeSqft": 1025,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1144000,
+        "usd": 8820
+      }
+    },
+    {
+      "number": "2303",
+      "type": "2 Bedroom",
+      "floor": 23,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1174000,
+        "usd": 9050
+      }
+    },
+    {
+      "number": "2302",
+      "type": "2 Bedroom",
+      "floor": 23,
+      "sizeSqm": 95.23,
+      "sizeSqft": 1025,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1162000,
+        "usd": 8970
+      }
+    },
+    {
+      "number": "2206",
+      "type": "2 Bedroom",
+      "floor": 22,
+      "sizeSqm": 104.61,
+      "sizeSqft": 1126,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1162000,
+        "usd": 8970
+      }
+    },
+    {
+      "number": "2203",
+      "type": "2 Bedroom",
+      "floor": 22,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1162000,
+        "usd": 8970
+      }
+    },
+    {
+      "number": "2106",
+      "type": "2 Bedroom",
+      "floor": 21,
+      "sizeSqm": 104.61,
+      "sizeSqft": 1126,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1125000,
+        "usd": 8680
+      }
+    },
+    {
+      "number": "2103",
+      "type": "2 Bedroom",
+      "floor": 21,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1162000,
+        "usd": 8970
+      }
+    },
+    {
+      "number": "2102",
+      "type": "2 Bedroom",
+      "floor": 21,
+      "sizeSqm": 95.23,
+      "sizeSqft": 1025,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1144000,
+        "usd": 8820
+      }
+    },
+    {
+      "number": "2003",
+      "type": "2 Bedroom",
+      "floor": 20,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1136000,
+        "usd": 8760
+      }
+    },
+    {
+      "number": "2002",
+      "type": "2 Bedroom",
+      "floor": 20,
+      "sizeSqm": 95.23,
+      "sizeSqft": 1025,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1087000,
+        "usd": 8390
+      }
+    },
+    {
+      "number": "1802",
+      "type": "2 Bedroom",
+      "floor": 18,
+      "sizeSqm": 95.23,
+      "sizeSqft": 1025,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1061000,
+        "usd": 8180
+      }
+    },
+    {
+      "number": "1703",
+      "type": "2 Bedroom",
+      "floor": 17,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "reserved",
+      "rentPerMonth": null
+    },
+    {
+      "number": "1502",
+      "type": "2 Bedroom",
+      "floor": 15,
+      "sizeSqm": 95.32,
+      "sizeSqft": 1026,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1050000,
+        "usd": 8100
+      }
+    },
+    {
+      "number": "1403",
+      "type": "2 Bedroom",
+      "floor": 14,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 967000,
+        "usd": 7460
+      }
+    },
+    {
+      "number": "1402",
+      "type": "2 Bedroom",
+      "floor": 14,
+      "sizeSqm": 95.32,
+      "sizeSqft": 1026,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1027000,
+        "usd": 7920
+      }
+    },
+    {
+      "number": "1310",
+      "type": "2 Bedroom",
+      "floor": 13,
+      "sizeSqm": 98.94,
+      "sizeSqft": 1065,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1057000,
+        "usd": 8160
+      }
+    },
+    {
+      "number": "1302",
+      "type": "2 Bedroom",
+      "floor": 13,
+      "sizeSqm": 95.32,
+      "sizeSqft": 1026,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1027000,
+        "usd": 7920
+      }
+    },
+    {
+      "number": "1210",
+      "type": "2 Bedroom",
+      "floor": 12,
+      "sizeSqm": 98.94,
+      "sizeSqft": 1065,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1001000,
+        "usd": 7720
+      }
+    },
+    {
+      "number": "1208",
+      "type": "2 Bedroom",
+      "floor": 12,
+      "sizeSqm": 114.27,
+      "sizeSqft": 1230,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "1202",
+      "type": "2 Bedroom",
+      "floor": 12,
+      "sizeSqm": 95.32,
+      "sizeSqft": 1026,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "1110",
+      "type": "2 Bedroom",
+      "floor": 11,
+      "sizeSqm": 98.94,
+      "sizeSqft": 1065,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 986000,
+        "usd": 7610
+      }
+    },
+    {
+      "number": "1108",
+      "type": "2 Bedroom",
+      "floor": 11,
+      "sizeSqm": 114.27,
+      "sizeSqft": 1230,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "1103",
+      "type": "2 Bedroom",
+      "floor": 11,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1031000,
+        "usd": 7950
+      }
+    },
+    {
+      "number": "1010",
+      "type": "2 Bedroom",
+      "floor": 10,
+      "sizeSqm": 98.94,
+      "sizeSqft": 1065,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1031000,
+        "usd": 7950
+      }
+    },
+    {
+      "number": "1003",
+      "type": "2 Bedroom",
+      "floor": 10,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 956000,
+        "usd": 7380
+      }
+    },
+    {
+      "number": "1002",
+      "type": "2 Bedroom",
+      "floor": 10,
+      "sizeSqm": 95.32,
+      "sizeSqft": 1026,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 997000,
+        "usd": 7690
+      }
+    },
+    {
+      "number": "908",
+      "type": "2 Bedroom",
+      "floor": 9,
+      "sizeSqm": 114.27,
+      "sizeSqft": 1230,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1054000,
+        "usd": 8130
+      }
+    },
+    {
+      "number": "808",
+      "type": "2 Bedroom",
+      "floor": 8,
+      "sizeSqm": 114.27,
+      "sizeSqft": 1230,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1042000,
+        "usd": 8040
+      }
+    },
+    {
+      "number": "803",
+      "type": "2 Bedroom",
+      "floor": 8,
+      "sizeSqm": 93.83,
+      "sizeSqft": 1010,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 956000,
+        "usd": 7380
+      }
+    },
+    {
+      "number": "701",
+      "type": "2 Bedroom",
+      "floor": 7,
+      "sizeSqm": 97.18,
+      "sizeSqft": 1046,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 994000,
+        "usd": 7660
+      }
+    },
+    {
+      "number": "601",
+      "type": "2 Bedroom",
+      "floor": 6,
+      "sizeSqm": 97.18,
+      "sizeSqft": 1046,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1009000,
+        "usd": 7780
+      }
+    },
+    {
+      "number": "501",
+      "type": "2 Bedroom",
+      "floor": 5,
+      "sizeSqm": 96.62,
+      "sizeSqft": 1040,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 986000,
+        "usd": 7610
+      }
+    },
+    {
+      "number": "2501",
+      "type": "3 Bedroom",
+      "floor": 25,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "let",
+      "rentPerMonth": null
+    },
+    {
+      "number": "2401",
+      "type": "3 Bedroom",
+      "floor": 24,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1575000,
+        "usd": 12150
+      }
+    },
+    {
+      "number": "1801",
+      "type": "3 Bedroom",
+      "floor": 18,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1406000,
+        "usd": 10850
+      }
+    },
+    {
+      "number": "1401",
+      "type": "3 Bedroom",
+      "floor": 14,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1387000,
+        "usd": 10700
+      }
+    },
+    {
+      "number": "1301",
+      "type": "3 Bedroom",
+      "floor": 13,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1376000,
+        "usd": 10610
+      }
+    },
+    {
+      "number": "1201",
+      "type": "3 Bedroom",
+      "floor": 12,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1331000,
+        "usd": 10270
+      }
+    },
+    {
+      "number": "1001",
+      "type": "3 Bedroom",
+      "floor": 10,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "reserved",
+      "rentPerMonth": null
+    },
+    {
+      "number": "901",
+      "type": "3 Bedroom",
+      "floor": 9,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1294000,
+        "usd": 9980
+      }
+    },
+    {
+      "number": "801",
+      "type": "3 Bedroom",
+      "floor": 8,
+      "sizeSqm": 138.05,
+      "sizeSqft": 1486,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "rentPerMonth": {
+        "kes": 1294000,
+        "usd": 9980
+      }
+    }
+  ],
+  "services": [
+    {
+      "name": "24/7 concierge",
+      "description": "Our concierge team helps maintain a secure and welcoming environment by managing access to the building, supporting visitors and deliveries, and ensuring residents can enjoy their homes with confidence and privacy."
+    },
+    {
+      "name": "From day one",
+      "description": "Everything you need will be set up automatically for as soon as you move in. All documents can be signed electronically. Additional add-ons include a selection of customised kitchen and linen packs."
+    },
+    {
+      "name": "Highly connected",
+      "description": "Being fully, reliably, digitally connected has never been more important. Huna Heights offers industry-leading broadband connectivity, with 1 Gbps broadband included as standard for all residents. As the first residential building in the UK to be awarded Platinum-level WiredScore accreditation,…"
+    },
+    {
+      "name": "Your life, made easy",
+      "description": "Huna Heights offers a range of services to make life easier, including uninterrupted mobile network connectivity in the lifts, complimentary Wi-Fi in all common areas, free access to hundreds of magazines and newspapers, car club membership, bicycle parking and much more."
+    },
+    {
+      "name": "Safe and secure",
+      "description": "The latest security technology is used for access throughout Huna Heights, so wherever you are in the building you can have complete peace of mind at all times. Our teams of security professionals are on hand 24/7 for additional convenience, with external patrols and extensive CCTV across the…"
+    },
+    {
+      "name": "Residents’ portal app",
+      "description": "With the press of a button, you can reserve the private dining room, book a swimming session or get immediate access to the latest local area offers."
+    },
+    {
+      "name": "Kitchen and dining",
+      "description": "From pots and pans to crockery, cutlery and glassware – all the tools you need to serve up a feast from day one."
+    },
+    {
+      "name": "Bedding and linens",
+      "description": "Wrap yourself in the softest towels and sink into the finest sheets – that’s the way to finish moving-in day."
+    },
+    {
+      "name": "Housekeeping",
+      "description": "Ease off on the chores – with optional cleaning, laundry, shoe-shine services and more – it’s just another load off your mind."
+    }
+  ],
+  "amenities": [
+    {
+      "name": "Above it all",
+      "description": "Whether for a few laps or a quick dip, the heated, 18-metre rooftop pool is the ultimate soul soother - 27 storeys above the city. Offset with luxurious sun loungers and all made especially easy with convenient changing rooms and outdoor showers."
+    },
+    {
+      "name": "Urban oasis",
+      "description": "Unwind in the double-height orangery and airy terrace on the 16th floor. With coffee available for residents, it’s one of the building’s many restorative and welcoming spaces."
+    },
+    {
+      "name": "Quality screen time",
+      "description": "With Dolby Atmos surround sound and exceptional 4K projection, movie-night takes on a whole new meaning when the big screen is only a lift ride away in the exclusive 15-seat cinema."
+    },
+    {
+      "name": "Wellness first",
+      "description": "State-of-the-art gym facilities are located on the fourth floor, featuring Technogym equipment and areas for resistance and cardio training. To take your training to the next level, our training team host regular events. The wellness suite features a steam room, sauna, private treatment room and…"
+    },
+    {
+      "name": "Residents lounge",
+      "description": "All the attractions of a private members club, at home. Entertain and host meetings with minimum intrusion and maximum style in the club lounge, where a fully equipped kitchen and dining room act as an extraordinary extension to your apartment. Make use of business conferencing facilities, enjoy…"
+    }
+  ]
+}

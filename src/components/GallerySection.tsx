@@ -42,7 +42,7 @@ export const GallerySection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="text-xs uppercase tracking-[0.25em] text-neutral-400 font-light block mb-2">
-              02. Gallery
+              03. Gallery
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-sans font-medium text-white tracking-tight">
               Inside <span className="font-serif-editorial italic font-normal text-neutral-200">Huna Heights</span>

@@ -1,0 +1,941 @@
+{
+  "source": "https://www.shardplace.com/",
+  "scraped_at": "2026-10-30T10:54:46Z",
+  "apartments": [
+    {
+      "name": "Studio",
+      "bedrooms": 0,
+      "short_description": "",
+      "image_url": "https://www.shardplace.com/media/civcqof5/studio2500x1875.jpg",
+      "availability_url": "https://www.shardplace.com/apartments/?apartmentId=studio#FirstPhaseNowAvailable",
+      "gallery_url": "https://www.shardplace.com/galleries/?galleryId=tmg-apartments&subGalleryId=apartments-studio",
+      "bathrooms": "",
+      "size_sqft": "",
+      "rent_per_week": "",
+      "units_listed": 0,
+      "units_available": 0,
+      "units": []
+    },
+    {
+      "name": "1 Bedroom",
+      "bedrooms": 1,
+      "short_description": "",
+      "image_url": "https://www.shardplace.com/media/anafezgo/1-bed-2500x1875.jpg",
+      "availability_url": "https://www.shardplace.com/apartments/?apartmentId=1-bedroom#FirstPhaseNowAvailable",
+      "gallery_url": "https://www.shardplace.com/galleries/?galleryId=tmg-apartments&subGalleryId=apartments-1-bedroom",
+      "bathrooms": "1",
+      "size_sqft": "561–844",
+      "rent_per_week": "£1,055",
+      "units_listed": 6,
+      "units_available": 1,
+      "units": [
+        {
+          "apartment": "1509",
+          "floor": "15",
+          "rent_per_week": "",
+          "bedrooms": "1",
+          "bathrooms": "1",
+          "status": "reserved",
+          "size_sqm": 78.41,
+          "size_sqft": 844,
+          "apartment_type": "1 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1509_1_bedroom_35fc6a1d124f18"
+        },
+        {
+          "apartment": "1504",
+          "floor": "15",
+          "rent_per_week": "£1,055",
+          "bedrooms": "1",
+          "bathrooms": "1",
+          "status": "available",
+          "size_sqm": 76.18,
+          "size_sqft": 820,
+          "apartment_type": "1 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1504_1_bedroom"
+        },
+        {
+          "apartment": "1306",
+          "floor": "13",
+          "rent_per_week": "",
+          "bedrooms": "1",
+          "bathrooms": "1",
+          "status": "let",
+          "size_sqm": 55.0,
+          "size_sqft": 592,
+          "apartment_type": "1 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1306_1_bedroom_3776e8497a0504"
+        },
+        {
+          "apartment": "1104",
+          "floor": "11",
+          "rent_per_week": "",
+          "bedrooms": "1",
+          "bathrooms": "1",
+          "status": "let",
+          "size_sqm": 77.3,
+          "size_sqft": 832,
+          "apartment_type": "1 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1104_1_bedroom"
+        },
+        {
+          "apartment": "707",
+          "floor": "7",
+          "rent_per_week": "",
+          "bedrooms": "1",
+          "bathrooms": "1",
+          "status": "let",
+          "size_sqm": 52.12,
+          "size_sqft": 561,
+          "apartment_type": "1 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_707_1_bedroom"
+        },
+        {
+          "apartment": "605",
+          "floor": "6",
+          "rent_per_week": "",
+          "bedrooms": "1",
+          "bathrooms": "1",
+          "status": "reserved",
+          "size_sqm": 61.78,
+          "size_sqft": 665,
+          "apartment_type": "1 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_605_1_bedroom_bcf29fa32b8455"
+        }
+      ]
+    },
+    {
+      "name": "2 Bedroom",
+      "bedrooms": 2,
+      "short_description": "",
+      "image_url": "https://www.shardplace.com/media/ttyp5uce/2-bed-2500x1875.jpg",
+      "availability_url": "https://www.shardplace.com/apartments/?apartmentId=2-bedroom#FirstPhaseNowAvailable",
+      "gallery_url": "https://www.shardplace.com/galleries/?galleryId=tmg-apartments&subGalleryId=apartments-2-bedroom",
+      "bathrooms": "2",
+      "size_sqft": "959–1230",
+      "rent_per_week": "£1,275–£1,595",
+      "units_listed": 35,
+      "units_available": 30,
+      "units": [
+        {
+          "apartment": "2605",
+          "floor": "26",
+          "rent_per_week": "",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "let",
+          "size_sqm": 89.09,
+          "size_sqft": 959,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2605_2_bedroom"
+        },
+        {
+          "apartment": "2406",
+          "floor": "24",
+          "rent_per_week": "£1,595",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 104.61,
+          "size_sqft": 1126,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2406_2_bedroom"
+        },
+        {
+          "apartment": "2403",
+          "floor": "24",
+          "rent_per_week": "£1,565",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2403_2_bedroom"
+        },
+        {
+          "apartment": "2402",
+          "floor": "24",
+          "rent_per_week": "£1,525",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.23,
+          "size_sqft": 1025,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2402_2_bedroom_9e78f193f7cae3"
+        },
+        {
+          "apartment": "2303",
+          "floor": "23",
+          "rent_per_week": "£1,565",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2303_2_bedroom"
+        },
+        {
+          "apartment": "2302",
+          "floor": "23",
+          "rent_per_week": "£1,550",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.23,
+          "size_sqft": 1025,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2302_2_bedroom"
+        },
+        {
+          "apartment": "2206",
+          "floor": "22",
+          "rent_per_week": "£1,550",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 104.61,
+          "size_sqft": 1126,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2206_2_bedroom"
+        },
+        {
+          "apartment": "2203",
+          "floor": "22",
+          "rent_per_week": "£1,550",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2203_2_bedroom_84e48e9c55b324"
+        },
+        {
+          "apartment": "2106",
+          "floor": "21",
+          "rent_per_week": "£1,500",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 104.61,
+          "size_sqft": 1126,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2106_2_bedroom_ff0b7d56f64fac"
+        },
+        {
+          "apartment": "2103",
+          "floor": "21",
+          "rent_per_week": "£1,550",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2103_2_bedroom_62f00278ba102c"
+        },
+        {
+          "apartment": "2102",
+          "floor": "21",
+          "rent_per_week": "£1,525",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.23,
+          "size_sqft": 1025,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2102_2_bedroom_58d786c70e9a15"
+        },
+        {
+          "apartment": "2003",
+          "floor": "20",
+          "rent_per_week": "£1,515",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2003_2_bedroom"
+        },
+        {
+          "apartment": "2002",
+          "floor": "20",
+          "rent_per_week": "£1,450",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.23,
+          "size_sqft": 1025,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2002_2_bedroom"
+        },
+        {
+          "apartment": "1802",
+          "floor": "18",
+          "rent_per_week": "£1,415",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.23,
+          "size_sqft": 1025,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1802_2_bedroom"
+        },
+        {
+          "apartment": "1703",
+          "floor": "17",
+          "rent_per_week": "",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "reserved",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1703_2_bedroom_d6d66c881f2e4b"
+        },
+        {
+          "apartment": "1502",
+          "floor": "15",
+          "rent_per_week": "£1,400",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.32,
+          "size_sqft": 1026,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1502_2_bedroom"
+        },
+        {
+          "apartment": "1403",
+          "floor": "14",
+          "rent_per_week": "£1,290",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1403_2_bedroom_39d87ea1fac06c"
+        },
+        {
+          "apartment": "1402",
+          "floor": "14",
+          "rent_per_week": "£1,370",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.32,
+          "size_sqft": 1026,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1402_2_bedroom_84e1e6dccd6fab"
+        },
+        {
+          "apartment": "1310",
+          "floor": "13",
+          "rent_per_week": "£1,410",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 98.94,
+          "size_sqft": 1065,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1310_2_bedroom_dd203395c8cb0d"
+        },
+        {
+          "apartment": "1302",
+          "floor": "13",
+          "rent_per_week": "£1,370",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.32,
+          "size_sqft": 1026,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1302_2_bedroom_c6ea93560d5f19"
+        },
+        {
+          "apartment": "1210",
+          "floor": "12",
+          "rent_per_week": "£1,335",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 98.94,
+          "size_sqft": 1065,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1210_2_bedroom"
+        },
+        {
+          "apartment": "1208",
+          "floor": "12",
+          "rent_per_week": "",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "let",
+          "size_sqm": 114.27,
+          "size_sqft": 1230,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1208_2_bedroom"
+        },
+        {
+          "apartment": "1202",
+          "floor": "12",
+          "rent_per_week": "",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "let",
+          "size_sqm": 95.32,
+          "size_sqft": 1026,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1202_2_bedroom"
+        },
+        {
+          "apartment": "1110",
+          "floor": "11",
+          "rent_per_week": "£1,315",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 98.94,
+          "size_sqft": 1065,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1110_2_bedroom"
+        },
+        {
+          "apartment": "1108",
+          "floor": "11",
+          "rent_per_week": "",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "let",
+          "size_sqm": 114.27,
+          "size_sqft": 1230,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1108_2_bedroom_a4674b762966db"
+        },
+        {
+          "apartment": "1103",
+          "floor": "11",
+          "rent_per_week": "£1,375",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1103_2_bedroom_57005c8f81c2e4"
+        },
+        {
+          "apartment": "1010",
+          "floor": "10",
+          "rent_per_week": "£1,375",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 98.94,
+          "size_sqft": 1065,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1010_2_bedroom_d9e1e02f003b76"
+        },
+        {
+          "apartment": "1003",
+          "floor": "10",
+          "rent_per_week": "£1,275",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1003_2_bedroom_7c71d4be4d5e41"
+        },
+        {
+          "apartment": "1002",
+          "floor": "10",
+          "rent_per_week": "£1,330",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 95.32,
+          "size_sqft": 1026,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1002_2_bedroom_fded7b0dfd8c67"
+        },
+        {
+          "apartment": "908",
+          "floor": "9",
+          "rent_per_week": "£1,405",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 114.27,
+          "size_sqft": 1230,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_908_2_bedroom_4f859733d30baa"
+        },
+        {
+          "apartment": "808",
+          "floor": "8",
+          "rent_per_week": "£1,390",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 114.27,
+          "size_sqft": 1230,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_808_2_bedroom_0d371821b6cf2d"
+        },
+        {
+          "apartment": "803",
+          "floor": "8",
+          "rent_per_week": "£1,275",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 93.83,
+          "size_sqft": 1010,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_803_2_bedroom_60e563770459db"
+        },
+        {
+          "apartment": "701",
+          "floor": "7",
+          "rent_per_week": "£1,325",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 97.18,
+          "size_sqft": 1046,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_701_2_bedroom_f603c33079750d"
+        },
+        {
+          "apartment": "601",
+          "floor": "6",
+          "rent_per_week": "£1,345",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 97.18,
+          "size_sqft": 1046,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/601-type_b_sp-particulars-2"
+        },
+        {
+          "apartment": "501",
+          "floor": "5",
+          "rent_per_week": "£1,315",
+          "bedrooms": "2",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 96.62,
+          "size_sqft": 1040,
+          "apartment_type": "2 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_501_2_bedroom_ba0c456d66f53b"
+        }
+      ]
+    },
+    {
+      "name": "3 Bedroom",
+      "bedrooms": 3,
+      "short_description": "",
+      "image_url": "https://www.shardplace.com/media/bdqkiecj/3-bed-2500x1875.jpg",
+      "availability_url": "https://www.shardplace.com/apartments/?apartmentId=3-bedroom#FirstPhaseNowAvailable",
+      "gallery_url": "https://www.shardplace.com/galleries/?galleryId=tmg-apartments&subGalleryId=apartments-3-bedroom",
+      "bathrooms": "2",
+      "size_sqft": "1486",
+      "rent_per_week": "£1,725–£2,100",
+      "units_listed": 9,
+      "units_available": 7,
+      "units": [
+        {
+          "apartment": "2501",
+          "floor": "25",
+          "rent_per_week": "",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "let",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2501_3_bedroom"
+        },
+        {
+          "apartment": "2401",
+          "floor": "24",
+          "rent_per_week": "£2,100",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_2401_3_bedroom_8adfb9967bd4a5"
+        },
+        {
+          "apartment": "1801",
+          "floor": "18",
+          "rent_per_week": "£1,875",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1801_3_bedroom"
+        },
+        {
+          "apartment": "1401",
+          "floor": "14",
+          "rent_per_week": "£1,850",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1401_3_bedroom_b01f0cac84c621"
+        },
+        {
+          "apartment": "1301",
+          "floor": "13",
+          "rent_per_week": "£1,835",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1301_3_bedroom_0de577adba3bdb"
+        },
+        {
+          "apartment": "1201",
+          "floor": "12",
+          "rent_per_week": "£1,775",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1201_3_bedroom_6f263653a90f6a"
+        },
+        {
+          "apartment": "1001",
+          "floor": "10",
+          "rent_per_week": "",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "reserved",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_1001_3_bedroom"
+        },
+        {
+          "apartment": "901",
+          "floor": "9",
+          "rent_per_week": "£1,725",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_901_3_bedroom_aa9eaebcaea3eb"
+        },
+        {
+          "apartment": "801",
+          "floor": "8",
+          "rent_per_week": "£1,725",
+          "bedrooms": "3",
+          "bathrooms": "2",
+          "status": "available",
+          "size_sqm": 138.05,
+          "size_sqft": 1486,
+          "apartment_type": "3 Bedroom",
+          "brochure_url": "https://issuu.com/remltd/docs/shard_place_apt_801_3_bedroom_d7764dd475ada2"
+        }
+      ]
+    }
+  ],
+  "amenities": [
+    {
+      "name": "Above it all",
+      "tagline": "",
+      "description": "Whether for a few laps or a quick dip, the heated, 18-metre rooftop pool is the ultimate soul soother - 27 storeys above the city. Offset with luxurious sun loungers and all made especially easy with convenient changing rooms and outdoor showers.",
+      "image_url": "https://www.shardplace.com/media/dxelxmd2/will-pryce-the-shard-dji_20250729202722_0771_d-fl-copy-print-copy.jpg",
+      "image_urls": [
+        "https://www.shardplace.com/media/dxelxmd2/will-pryce-the-shard-dji_20250729202722_0771_d-fl-copy-print-copy.jpg"
+      ]
+    },
+    {
+      "name": "Urban oasis",
+      "tagline": "",
+      "description": "Unwind in the double-height orangery and airy terrace on the 16th floor. With coffee available for residents, it’s one of the building’s many restorative and welcoming spaces.",
+      "image_url": "https://www.shardplace.com/media/elwdl2qg/rem002_brief02_039_web.jpg",
+      "image_urls": [
+        "https://www.shardplace.com/media/elwdl2qg/rem002_brief02_039_web.jpg"
+      ]
+    },
+    {
+      "name": "Quality screen time",
+      "tagline": "",
+      "description": "With Dolby Atmos surround sound and exceptional 4K projection, movie-night takes on a whole new meaning when the big screen is only a lift ride away in the exclusive 15-seat cinema.",
+      "image_url": "https://www.shardplace.com/media/cs5fvyjb/2500x1875-cinema.jpg",
+      "image_urls": [
+        "https://www.shardplace.com/media/cs5fvyjb/2500x1875-cinema.jpg"
+      ]
+    },
+    {
+      "name": "Wellness first",
+      "tagline": "",
+      "description": "State-of-the-art gym facilities are located on the fourth floor, featuring Technogym equipment and areas for resistance and cardio training. To take your training to the next level, our training team host regular events. The wellness suite features a steam room, sauna, private treatment room and…",
+      "image_url": "https://www.shardplace.com/media/xs4he4vz/rem002_brief02_029_web.jpg",
+      "image_urls": [
+        "https://www.shardplace.com/media/xs4he4vz/rem002_brief02_029_web.jpg",
+        "https://www.shardplace.com/media/nkvjb0xz/rem002_brief02_025_web.jpg",
+        "https://www.shardplace.com/media/r0ybz5wn/rem002_brief02_028_web.jpg"
+      ]
+    },
+    {
+      "name": "Residents lounge",
+      "tagline": "",
+      "description": "All the attractions of a private members club, at home. Entertain and host meetings with minimum intrusion and maximum style in the club lounge, where a fully equipped kitchen and dining room act as an extraordinary extension to your apartment. Make use of business conferencing facilities, enjoy…",
+      "image_url": "https://www.shardplace.com/media/bj0lgdgo/rem002_brief02_015_web.jpg",
+      "image_urls": [
+        "https://www.shardplace.com/media/bj0lgdgo/rem002_brief02_015_web.jpg",
+        "https://www.shardplace.com/media/ogfl4o0v/rem002_brief02_014_web.jpg",
+        "https://www.shardplace.com/media/p14lwx4c/rem002_brief02_016_web.jpg"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "name": "24/7 concierge",
+      "short_description": "Our concierge team helps maintain a secure and welcoming environment by managing access to the building, supporting visitors and deliveries, and ensuring residents can enjoy their homes with confidence and privacy.",
+      "image_url": "https://www.shardplace.com/media/syogm2yq/lobby-hero-photo.jpg"
+    },
+    {
+      "name": "From day one",
+      "short_description": "Everything you need will be set up automatically for as soon as you move in. All documents can be signed electronically. Additional add-ons include a selection of customised kitchen and linen packs.",
+      "image_url": "https://www.shardplace.com/media/gdtgxg2g/move-in.jpg"
+    },
+    {
+      "name": "Highly connected",
+      "short_description": "Being fully, reliably, digitally connected has never been more important. Shard Place offers industry-leading broadband connectivity, with 1 Gbps broadband included as standard for all residents. As the first residential building in the UK to be awarded Platinum-level WiredScore accreditation,…",
+      "image_url": "https://www.shardplace.com/media/t2imjhyp/broadband-700h.jpg"
+    },
+    {
+      "name": "Your life, made easy",
+      "short_description": "Shard Place offers a range of services to make life easier, including uninterrupted mobile network connectivity in the lifts, complimentary Wi-Fi in all common areas, free access to hundreds of magazines and newspapers, car club membership, bicycle parking and much more.",
+      "image_url": "https://www.shardplace.com/media/dohdub0i/life-easy.jpg"
+    },
+    {
+      "name": "Safe and secure",
+      "short_description": "The latest security technology is used for access throughout Shard Place, so wherever you are in the building you can have complete peace of mind at all times. Our teams of security professionals are on hand 24/7 for additional convenience, with external patrols and extensive CCTV across the…",
+      "image_url": "https://www.shardplace.com/media/0s2hfxop/post-ck-small.jpg"
+    },
+    {
+      "name": "Residents’ portal app",
+      "short_description": "With the press of a button, you can reserve the private dining room, book a swimming session or get immediate access to the latest local area offers.",
+      "image_url": "https://www.shardplace.com/media/zqddaywt/iphone.png"
+    },
+    {
+      "name": "Kitchen and dining",
+      "short_description": "From pots and pans to crockery, cutlery and glassware – all the tools you need to serve up a feast from day one.",
+      "image_url": ""
+    },
+    {
+      "name": "Bedding and linens",
+      "short_description": "Wrap yourself in the softest towels and sink into the finest sheets – that’s the way to finish moving-in day.",
+      "image_url": ""
+    },
+    {
+      "name": "Housekeeping",
+      "short_description": "Ease off on the chores – with optional cleaning, laundry, shoe-shine services and more – it’s just another load off your mind.",
+      "image_url": ""
+    }
+  ],
+  "galleries": [
+    {
+      "category": "Amenities",
+      "subcategory": "Wellness",
+      "image_count": 11,
+      "image_urls": [
+        "https://www.shardplace.com/media/np2hk45y/rem002_brief02_028_web.jpg",
+        "https://www.shardplace.com/media/sn1kdc2q/rem002_brief02_061_web.jpg",
+        "https://www.shardplace.com/media/4p0j2x2a/rem002_brief02_060_web.jpg",
+        "https://www.shardplace.com/media/px5gy0rd/rem002_brief02_058_web.jpg",
+        "https://www.shardplace.com/media/h1fb1iq0/rem002_brief02_027_web.jpg",
+        "https://www.shardplace.com/media/okranmnr/rem002_brief02_029_web.jpg",
+        "https://www.shardplace.com/media/vymf43jm/rem002_brief02_030_web.jpg",
+        "https://www.shardplace.com/media/45lhdkds/rem002_brief02_031_web.jpg",
+        "https://www.shardplace.com/media/nk3n5cql/rem002_brief02_059_web.jpg",
+        "https://www.shardplace.com/media/dtjevv3u/rem002_brief02_024_web.jpg",
+        "https://www.shardplace.com/media/lxtpl0od/rem002_brief02_023_web.jpg"
+      ]
+    },
+    {
+      "category": "Amenities",
+      "subcategory": "Residents Lounge",
+      "image_count": 7,
+      "image_urls": [
+        "https://www.shardplace.com/media/efkor0zv/rem002_brief02_035_web.jpg",
+        "https://www.shardplace.com/media/qksnocv1/rem002_brief02_016_web.jpg",
+        "https://www.shardplace.com/media/1chd0wso/rem002_brief02_015_web.jpg",
+        "https://www.shardplace.com/media/kotl4ui2/rem002_brief02_014_web.jpg",
+        "https://www.shardplace.com/media/iaungqgo/rem002_brief02_018_web.jpg",
+        "https://www.shardplace.com/media/oh0fohpv/rem002_brief02_017_web.jpg",
+        "https://www.shardplace.com/media/q52legyq/rem002_brief02_068_web.jpg"
+      ]
+    },
+    {
+      "category": "Amenities",
+      "subcategory": "Orangery",
+      "image_count": 9,
+      "image_urls": [
+        "https://www.shardplace.com/media/vufh2cyf/rem002_brief02_042_web.jpg",
+        "https://www.shardplace.com/media/jybbpegy/rem002_brief02_066_web.jpg",
+        "https://www.shardplace.com/media/zsgj21zw/rem002_brief02_064_web.jpg",
+        "https://www.shardplace.com/media/grfoidpl/rem002_brief02_062_web.jpg",
+        "https://www.shardplace.com/media/ywbpkhbz/rem002_brief02_043_web.jpg",
+        "https://www.shardplace.com/media/gzmllxqg/rem002_brief02_044_web.jpg",
+        "https://www.shardplace.com/media/damcywgs/rem002_brief02_067_web.jpg",
+        "https://www.shardplace.com/media/swmdoilk/rem002_brief02_039_web.jpg",
+        "https://www.shardplace.com/media/a1alwzn1/rem002_brief02_036_web.jpg"
+      ]
+    },
+    {
+      "category": "Amenities",
+      "subcategory": "Cinema",
+      "image_count": 2,
+      "image_urls": [
+        "https://www.shardplace.com/media/wsbjl54s/rem002_brief02_022_web.jpg",
+        "https://www.shardplace.com/media/uqclzg52/rem002_brief02_020b_web.jpg"
+      ]
+    },
+    {
+      "category": "Amenities",
+      "subcategory": "Terrace",
+      "image_count": 6,
+      "image_urls": [
+        "https://www.shardplace.com/media/wlufzgiq/rem002_brief02_051_web.jpg",
+        "https://www.shardplace.com/media/rewmooz4/rem002_brief02_052_web.jpg",
+        "https://www.shardplace.com/media/hhsdw4mn/rem002_brief02_054_web.jpg",
+        "https://www.shardplace.com/media/t4wej4pk/rem002_brief02_055_web.jpg",
+        "https://www.shardplace.com/media/30elmwdt/rem002_brief02_056_web.jpg",
+        "https://www.shardplace.com/media/u0vhbmvf/rem002_brief02_050_web.jpg"
+      ]
+    },
+    {
+      "category": "The Building",
+      "subcategory": "Exterior",
+      "image_count": 5,
+      "image_urls": [
+        "https://www.shardplace.com/media/yzsfxywd/ext09_hero-view-from-science-quarter_e.jpg",
+        "https://www.shardplace.com/media/nuljajqf/ext08_hero-view-from-shard-quarter_e.jpg",
+        "https://www.shardplace.com/media/3swbdxdd/ext06_aerial-hero_rooftop-pool_e.jpg",
+        "https://www.shardplace.com/media/jbrjad2o/ext04_aerial-hero-guys-hospital.jpg",
+        "https://www.shardplace.com/media/wspjz54n/ext02_aerial-hero-evening-tower-of-london_e.jpg"
+      ]
+    },
+    {
+      "category": "The Building",
+      "subcategory": "Lobby",
+      "image_count": 5,
+      "image_urls": [
+        "https://www.shardplace.com/media/lwmirbxf/rem002_brief02_007_web.jpg",
+        "https://www.shardplace.com/media/42sn0che/rem002_brief02_013_web.jpg",
+        "https://www.shardplace.com/media/wi5ng2qv/rem002_brief02_008_web.jpg",
+        "https://www.shardplace.com/media/gejpe3st/rem002_brief02_006_web.jpg",
+        "https://www.shardplace.com/media/nailkrmq/rem002_brief02_005_web.jpg"
+      ]
+    },
+    {
+      "category": "Apartments",
+      "subcategory": "Bermondsey Dark",
+      "image_count": 11,
+      "image_urls": [
+        "https://www.shardplace.com/media/ew0lffjh/rem002_brief-01_001_w4k.jpg",
+        "https://www.shardplace.com/media/ieecxdtm/rem002_brief-01_005_w4k.jpg",
+        "https://www.shardplace.com/media/ymblfvzs/rem002_brief-01_011_w4k.jpg",
+        "https://www.shardplace.com/media/hkanzaki/rem002_brief-01_008_w4k.jpg",
+        "https://www.shardplace.com/media/jgvg0fpi/rem002_brief-01_025_w4k.jpg",
+        "https://www.shardplace.com/media/uhvbceeb/rem002_brief-01_024_w4k.jpg",
+        "https://www.shardplace.com/media/po4fikm1/rem002_brief-01_032_w4k.jpg",
+        "https://www.shardplace.com/media/wrgjhcst/rem002_brief-01_013_w4k.jpg",
+        "https://www.shardplace.com/media/1w1pinaw/rem002_brief-01_014_w4k.jpg",
+        "https://www.shardplace.com/media/u3ljhre4/rem002_brief-01_020_w4k.jpg",
+        "https://www.shardplace.com/media/pldl4psl/rem002_brief-01_007_w4k.jpg"
+      ]
+    },
+    {
+      "category": "Apartments",
+      "subcategory": "Borough Dark",
+      "image_count": 15,
+      "image_urls": [
+        "https://www.shardplace.com/media/utaog2db/rem002_brief-01_074_w4k.jpg",
+        "https://www.shardplace.com/media/iqvbaqr0/rem002_brief-01_067_w4k.jpg",
+        "https://www.shardplace.com/media/4timxvpq/rem002_brief-01_061_w4k.jpg",
+        "https://www.shardplace.com/media/dyknpnme/rem002_brief-01_062_w4k.jpg",
+        "https://www.shardplace.com/media/njifk00k/rem002_brief-01_063_w4k.jpg",
+        "https://www.shardplace.com/media/lpbbuau0/rem002_brief-01_064_w4k.jpg",
+        "https://www.shardplace.com/media/iqsnrqya/rem002_brief-01_066_w4k.jpg",
+        "https://www.shardplace.com/media/blvnh1yc/rem002_brief-01_067_w4k.jpg",
+        "https://www.shardplace.com/media/rlgfqia5/rem002_brief-01_060_w4k.jpg",
+        "https://www.shardplace.com/media/fhfl5faa/rem002_brief-01_059_w4k.jpg",
+        "https://www.shardplace.com/media/xscp3j2s/rem002_brief-01_057_w4k.jpg",
+        "https://www.shardplace.com/media/thaluifl/rem002_brief-01_047_w4k.jpg",
+        "https://www.shardplace.com/media/btgcoc2u/rem002_brief-01_048_w4k.jpg",
+        "https://www.shardplace.com/media/xmmbfkk3/rem002_brief-01_053_w4k.jpg",
+        "https://www.shardplace.com/media/2icdm4lm/rem002_brief-01_040_w4k.jpg"
+      ]
+    },
+    {
+      "category": "Apartments",
+      "subcategory": "Bermondsey Light",
+      "image_count": 8,
+      "image_urls": [
+        "https://www.shardplace.com/media/0jlposhn/rem002_brief-01_039_w4k.jpg",
+        "https://www.shardplace.com/media/znuljubs/rem002_brief-01_040_w4k.jpg",
+        "https://www.shardplace.com/media/5ull4jsv/rem002_brief-01_032_w4k.jpg",
+        "https://www.shardplace.com/media/1achpfoz/rem002_brief-01_033_w4k.jpg",
+        "https://www.shardplace.com/media/0xbl24ku/rem002_brief-01_034_w4k.jpg",
+        "https://www.shardplace.com/media/qp0pl1xo/rem002_brief-01_036_w4k.jpg",
+        "https://www.shardplace.com/media/knhlgcor/rem002_brief-01_037_w4k.jpg",
+        "https://www.shardplace.com/media/q3bpr1co/rem002_brief-01_038_w4k.jpg"
+      ]
+    },
+    {
+      "category": "Apartments",
+      "subcategory": "Borough Light",
+      "image_count": 20,
+      "image_urls": [
+        "https://www.shardplace.com/media/0hifryzc/rem002_brief-01_073_w4k.jpg",
+        "https://www.shardplace.com/media/o4ui12gj/rem002_brief-01_072_w4k.jpg",
+        "https://www.shardplace.com/media/wwalqfff/rem002_brief-01_071_w4k.jpg",
+        "https://www.shardplace.com/media/5aodmrfr/rem002_brief-01_076_w4k.jpg",
+        "https://www.shardplace.com/media/fbehj0nd/rem002_brief-01_075_w4k.jpg",
+        "https://www.shardplace.com/media/31hhpqjz/rem002_brief-01_077_w4k.jpg",
+        "https://www.shardplace.com/media/o5mlt0e4/rem002_brief-01_078_w4k.jpg",
+        "https://www.shardplace.com/media/lj5oe2ib/rem002_brief-01_079_w4k.jpg",
+        "https://www.shardplace.com/media/ittd0hyv/rem002_brief-01_080_w4k.jpg",
+        "https://www.shardplace.com/media/3b4n5ypy/rem002_brief-01_082_w4k.jpg",
+        "https://www.shardplace.com/media/kahpmtwe/rem002_brief-01_083_w4k.jpg",
+        "https://www.shardplace.com/media/hhxainhg/rem002_brief-01_084_w4k.jpg",
+        "https://www.shardplace.com/media/ngcfcugw/rem002_brief-01_087_w4k.jpg",
+        "https://www.shardplace.com/media/dqudtyzu/rem002_brief-01_086_w4k.jpg",
+        "https://www.shardplace.com/media/hhxgrt0s/rem002_brief-01_090_w4k.jpg",
+        "https://www.shardplace.com/media/hhqh40ey/rem002_brief-01_091_w4k.jpg",
+        "https://www.shardplace.com/media/54qdrijw/rem002_brief-01_092_w4k.jpg",
+        "https://www.shardplace.com/media/nbsly11o/rem002_brief-01_093_w4k.jpg",
+        "https://www.shardplace.com/media/fhqlsqik/rem002_brief-01_094_w4k.jpg",
+        "https://www.shardplace.com/media/m41ivusn/rem002_brief-01_098_w4k.jpg"
+      ]
+    }
+  ]
+}

@@ -9,7 +9,7 @@ export const AboutSection: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
           <span className="text-xs uppercase tracking-[0.25em] text-neutral-400 font-light block mb-2">
-            04. About Huna Heights
+            07. About Huna Heights
           </span>
           <h2 className="text-3xl sm:text-5xl font-sans font-medium text-white tracking-tight leading-tight">
             Modern Living. <br />
