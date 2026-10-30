@@ -1,34 +1,33 @@
-// Turns the scraped demo data (data/demo.json) into the site's estate data
-// (src/data/estate.json): units, services and amenities, rebranded for
-// Huna Heights, with weekly GBP rents converted to monthly KES and USD.
-// Image URLs are dropped; the site uses its own photos.
+// Turns the scraped demo data (data/demo.json) into the site's sample unit list
+// (src/data/estate.json). Only unit numbers, floors, sizes, beds, baths and
+// status are used; the source's copy, prices and image URLs are not.
+//
+// Rents are indicative placeholders per apartment type, to confirm with the client.
 //
 // Run: npm run import:demo
 import { readFileSync, writeFileSync } from 'node:fs';
 
-// GBP rates from open.er-api.com, 30 Oct 2026. Update and re-run to refresh.
-const RATES = { asOf: '2026-10-30', gbpToKes: 173.066223, gbpToUsd: 1.334844 };
-const WEEKS_PER_MONTH = 52 / 12;
+// Indicative monthly rents in KES, to confirm. Replace with the client's figures.
+const INDICATIVE_RENT_KES = {
+  '2 Bedroom': 140000,
+  '3 Bedroom': 190000,
+};
 
-const REPLACEMENTS = [
-  [/The Shard/g, 'Huna Heights'],
-  [/Shard Place/g, 'Huna Heights'],
-  [/London/g, 'Nairobi'],
-];
+// USD per KES from open.er-api.com, 30 Oct 2026 (1 USD = KES 129.65).
+const RATES = { asOf: '2026-10-30', kesToUsd: 1.334844 / 173.066223 };
 
-const rebrand = (text) => REPLACEMENTS.reduce((t, [from, to]) => t.replace(from, to), text ?? '');
+const bedroomsOf = (type) => Number(type.match(/\d+/)[0]);
+const byBedrooms = Object.entries(INDICATIVE_RENT_KES).sort(([a], [b]) => bedroomsOf(a) - bedroomsOf(b));
+byBedrooms.forEach(([type, kes], i) => {
+  const [prevType, prevKes] = byBedrooms[i - 1] ?? [];
+  if (prevKes !== undefined && kes <= prevKes) {
+    throw new Error(`${type} rent (KES ${kes}) must be higher than ${prevType} rent (KES ${prevKes})`);
+  }
+});
 
-const roundTo = (value, step) => Math.round(value / step) * step;
-
-function monthlyRent(weekly) {
-  const gbp = Number(String(weekly).replace(/[^\d.]/g, ''));
-  if (!gbp) return null;
-  const monthlyGbp = gbp * WEEKS_PER_MONTH;
-  return {
-    kes: roundTo(monthlyGbp * RATES.gbpToKes, 1000),
-    usd: roundTo(monthlyGbp * RATES.gbpToUsd, 10),
-  };
-}
+const rents = Object.fromEntries(
+  byBedrooms.map(([type, kes]) => [type, { kes, usd: Math.round((kes * RATES.kesToUsd) / 10) * 10 }]),
+);
 
 const demo = JSON.parse(readFileSync(new URL('../data/demo.json', import.meta.url), 'utf8'));
 
@@ -42,21 +41,10 @@ const units = demo.apartments.flatMap((type) =>
     bedrooms: Number(u.bedrooms),
     bathrooms: Number(u.bathrooms),
     status: u.status,
-    rentPerMonth: monthlyRent(u.rent_per_week),
+    rentPerMonth: u.status === 'available' ? (rents[type.name] ?? null) : null,
   })),
 );
 
-const services = demo.services.map((s) => ({
-  name: rebrand(s.name),
-  description: rebrand(s.short_description),
-}));
-
-const amenities = demo.amenities.map((a) => ({
-  name: rebrand(a.name),
-  description: rebrand(a.description),
-}));
-
-const estate = { rates: RATES, units, services, amenities };
-const out = new URL('../src/data/estate.json', import.meta.url);
-writeFileSync(out, JSON.stringify(estate, null, 2) + '\n');
-console.log(`Wrote ${units.length} units, ${services.length} services, ${amenities.length} amenities to src/data/estate.json`);
+const estate = { rates: { asOf: RATES.asOf }, rents, units };
+writeFileSync(new URL('../src/data/estate.json', import.meta.url), JSON.stringify(estate, null, 2) + '\n');
+console.log(`Wrote ${units.length} sample units and rents for ${Object.keys(rents).join(', ')} to src/data/estate.json`);

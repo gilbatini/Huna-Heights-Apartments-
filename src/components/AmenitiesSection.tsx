@@ -1,6 +1,12 @@
 import React from 'react';
 import { AMENITIES, AMENITY_IMAGES, SERVICES } from '../data/estate';
 
+const ToConfirm = () => (
+  <span className="shrink-0 px-2 py-0.5 rounded-full border border-white/15 text-[10px] uppercase tracking-wider text-neutral-400">
+    To confirm
+  </span>
+);
+
 export const AmenitiesSection: React.FC = () => (
   <section id="amenities" className="py-24 sm:py-32 bg-[#08090b] text-neutral-100 border-t border-white/5">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
@@ -15,7 +21,7 @@ export const AmenitiesSection: React.FC = () => (
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-24">
         {AMENITIES.map((a, i) => (
           <article key={a.name} className="bg-[#0d0f14] border border-white/10 rounded-3xl overflow-hidden flex flex-col">
             <div className="aspect-[16/10] bg-black overflow-hidden">
@@ -27,7 +33,10 @@ export const AmenitiesSection: React.FC = () => (
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-medium text-white mb-2">{a.name}</h3>
+              <div className="flex items-center justify-between gap-3 mb-2">
+                <h3 className="text-lg font-medium text-white">{a.name}</h3>
+                <ToConfirm />
+              </div>
               <p className="text-sm text-neutral-400 font-light leading-relaxed">{a.description}</p>
             </div>
           </article>
@@ -48,10 +57,13 @@ export const AmenitiesSection: React.FC = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10 rounded-3xl overflow-hidden">
         {SERVICES.map((s) => (
           <div key={s.name} className="bg-[#0d0f14] p-6 sm:p-8">
-            <h3 className="text-base font-medium text-white mb-2 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-neutral-300" />
-              {s.name}
-            </h3>
+            <div className="flex items-center justify-between gap-3 mb-2">
+              <h3 className="text-base font-medium text-white flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-300" />
+                {s.name}
+              </h3>
+              <ToConfirm />
+            </div>
             <p className="text-sm text-neutral-400 font-light leading-relaxed">{s.description}</p>
           </div>
         ))}

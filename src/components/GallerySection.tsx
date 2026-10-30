@@ -51,7 +51,9 @@ export const GallerySection: React.FC = () => {
 
           {/* Interactive filter tabs */}
           <div className="flex items-center gap-1.5 p-1 bg-white/5 border border-white/10 rounded-full overflow-x-auto no-scrollbar">
-            {(['all', 'architecture', 'interiors', 'outdoor', 'evening'] as const).map((cat) => (
+            {(['all', 'architecture', 'interiors', 'outdoor', 'evening'] as const)
+              .filter((cat) => cat === 'all' || GALLERY_PHOTOS.some((p) => p.category === cat))
+              .map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}

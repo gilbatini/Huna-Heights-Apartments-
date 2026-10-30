@@ -1,9 +1,14 @@
+// Furnished stays are priced per night; leased apartments per month (indicative).
+export type Pricing =
+  | { kind: 'nightly'; usd: number }
+  | { kind: 'monthly'; kes: number; usd: number };
+
 export interface Cabin {
   id: string;
   name: string;
   subtitle: string;
   location: string;
-  pricePerNight: number;
+  pricing: Pricing;
   rating: number;
   reviewsCount: number;
   guestsMax: number;
@@ -37,6 +42,7 @@ export interface AddOn {
 
 export interface ReservationConfirmation {
   bookingId: string;
+  requestType: 'stay' | 'viewing';
   cabin: Cabin;
   checkIn: string;
   checkOut: string;

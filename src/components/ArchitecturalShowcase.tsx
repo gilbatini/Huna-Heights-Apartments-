@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CABINS } from '../data/cabins';
 import { Cabin } from '../types';
+import { formatKes, formatUsd } from '../data/estate';
 import { Sparkles, ArrowUpRight, Bed, Bath, Maximize2, ShieldCheck, Waves } from 'lucide-react';
 
 interface ArchitecturalShowcaseProps {
@@ -71,9 +72,19 @@ export const ArchitecturalShowcase: React.FC<ArchitecturalShowcaseProps> = ({
                 {activeCabin.location}
               </div>
               <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 text-right">
-                <span className="text-[10px] uppercase tracking-wider text-neutral-400 block">Indicative Rate · To Confirm</span>
-                <span className="text-lg font-semibold text-white font-mono tabular-nums">${activeCabin.pricePerNight}</span>
-                <span className="text-xs text-neutral-400"> / night</span>
+                <span className="text-[10px] uppercase tracking-wider text-neutral-400 block">Indicative, To Confirm</span>
+                {activeCabin.pricing.kind === 'monthly' ? (
+                  <>
+                    <span className="text-lg font-semibold text-white font-mono tabular-nums">{formatKes(activeCabin.pricing.kes)}</span>
+                    <span className="text-xs text-neutral-400"> / month</span>
+                    <span className="block text-[11px] text-neutral-400 tabular-nums">≈ {formatUsd(activeCabin.pricing.usd)}</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-lg font-semibold text-white font-mono tabular-nums">${activeCabin.pricing.usd}</span>
+                    <span className="text-xs text-neutral-400"> / night</span>
+                  </>
+                )}
               </div>
             </div>
 

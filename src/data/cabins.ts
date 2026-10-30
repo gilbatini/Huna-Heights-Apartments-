@@ -1,4 +1,5 @@
 import { Cabin, AddOn, GalleryPhoto } from '../types';
+import { RENTS } from './estate';
 
 // Placeholder figures (prices, sizes) are marked "to confirm" on the page.
 // Replace them with the client's real details.
@@ -9,7 +10,7 @@ export const CABINS: Cabin[] = [
     name: 'The Furnished Residence',
     subtitle: 'Short & medium stays',
     location: 'Huna Heights, Nairobi, Kenya',
-    pricePerNight: 580,
+    pricing: { kind: 'nightly', usd: 580 },
     rating: 0,
     reviewsCount: 0,
     guestsMax: 4,
@@ -51,7 +52,7 @@ export const CABINS: Cabin[] = [
     name: 'Two-Bedroom Apartment',
     subtitle: 'Long-term lease',
     location: 'Huna Heights, Nairobi, Kenya',
-    pricePerNight: 720,
+    pricing: { kind: 'monthly', ...RENTS['2 Bedroom'] },
     rating: 0,
     reviewsCount: 0,
     guestsMax: 4,
@@ -87,7 +88,7 @@ export const CABINS: Cabin[] = [
     name: 'Three-Bedroom Apartment',
     subtitle: 'Long-term lease',
     location: 'Huna Heights, Nairobi, Kenya',
-    pricePerNight: 640,
+    pricing: { kind: 'monthly', ...RENTS['3 Bedroom'] },
     rating: 0,
     reviewsCount: 0,
     guestsMax: 4,
@@ -164,15 +165,6 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     src: '/images/cabin-dining-kitchen.jpg',
     aspect: 'aspect-[16/9]',
     caption: 'Fitted kitchen with dining space.',
-    details: 'Photo to be replaced',
-  },
-  {
-    id: 'gal-6',
-    title: 'Evening',
-    category: 'evening',
-    src: '/images/cabin-twilight-monolith.png',
-    aspect: 'aspect-[4/3]',
-    caption: 'Huna Heights in the evening.',
     details: 'Photo to be replaced',
   },
 ];

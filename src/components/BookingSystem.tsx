@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CABINS, ADD_ONS } from '../data/cabins';
 import { Cabin, AddOn, ReservationConfirmation } from '../types';
+import { formatKes, formatUsd } from '../data/estate';
 import {
   Calendar,
   Users,
@@ -68,12 +69,15 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
     }
   };
 
-  const nights = calculateNights();
-  const nightlyTotal = activeCabin.pricePerNight * nights;
-  const cleaningFee = 140;
+  // Leased apartments take a viewing request; only furnished stays are priced by the night.
+  const pricing = activeCabin.pricing;
+  const isViewing = pricing.kind === 'monthly';
+  const nights = isViewing ? 0 : calculateNights();
+  const nightlyTotal = pricing.kind === 'nightly' ? pricing.usd * nights : 0;
+  const cleaningFee = isViewing ? 0 : 140;
   const serviceFee = Math.round(nightlyTotal * 0.08);
 
-  const activeAddOnsList = ADD_ONS.filter((a) => selectedAddOns.includes(a.id));
+  const activeAddOnsList = isViewing ? [] : ADD_ONS.filter((a) => selectedAddOns.includes(a.id));
   const addOnsTotal = activeAddOnsList.reduce((sum, item) => sum + item.price, 0);
   const grandTotal = nightlyTotal + cleaningFee + serviceFee + addOnsTotal;
 
@@ -96,7 +100,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
     
     const start = new Date(checkInDate);
     const end = new Date(checkOutDate);
-    if (end <= start) errors.dates = 'Check-out date must be after check-in date';
+    if (!isViewing && end <= start) errors.dates = 'Check-out date must be after check-in date';
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -112,6 +116,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
       const code = `HH-${Math.floor(100000 + Math.random() * 900000)}`;
       const conf: ReservationConfirmation = {
         bookingId: code,
+        requestType: isViewing ? 'viewing' : 'stay',
         cabin: activeCabin,
         checkIn: checkInDate,
         checkOut: checkOutDate,
@@ -139,13 +144,17 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
 
   const createCalendarUrl = () => {
     if (!confirmation) return '#';
-    const title = encodeURIComponent(`Stay at ${confirmation.cabin.name}`);
+    const title = encodeURIComponent(
+      `${confirmation.requestType === 'viewing' ? 'Viewing' : 'Stay'} at ${confirmation.cabin.name}`,
+    );
     const details = encodeURIComponent(
       `Booking Reference: ${confirmation.bookingId}\nLocation: ${confirmation.cabin.location}\nGuests: ${confirmation.guests}\nDirect Concierge: concierge@hunaheights.com`
     );
     const location = encodeURIComponent(confirmation.cabin.location);
-    const sDate = confirmation.checkIn.replace(/-/g, '') + 'T150000Z';
-    const eDate = confirmation.checkOut.replace(/-/g, '') + 'T110000Z';
+    const day = confirmation.checkIn.replace(/-/g, '');
+    const sDate = confirmation.requestType === 'viewing' ? `${day}T070000Z` : `${day}T150000Z`;
+    const eDate =
+      confirmation.requestType === 'viewing' ? `${day}T080000Z` : confirmation.checkOut.replace(/-/g, '') + 'T110000Z';
     return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${sDate}/${eDate}&details=${details}&location=${location}`;
   };
 
@@ -204,6 +213,18 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 </div>
               </div>
 
+              {confirmation.requestType === 'viewing' ? (
+              <div className="py-4 grid grid-cols-2 gap-4">
+                <div>
+                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Preferred Viewing Date</span>
+                  <span className="text-white font-medium">{confirmation.checkIn}</span>
+                </div>
+                <div>
+                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Request</span>
+                  <span className="text-white font-medium">Viewing, long-term lease</span>
+                </div>
+              </div>
+              ) : (
               <div className="py-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
                 <div>
                   <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Check-In</span>
@@ -224,6 +245,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                   <span className="text-white font-medium">{confirmation.guests} Guests</span>
                 </div>
               </div>
+              )}
 
               {confirmation.addOns.length > 0 && (
                 <div className="py-4">
@@ -242,10 +264,18 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
               )}
 
               <div className="pt-4 flex items-center justify-between">
-                <div>
-                  <span className="text-neutral-400 block text-[11px]">Estimated Total (To Confirm)</span>
-                  <span className="text-xl font-bold font-mono text-white">${confirmation.grandTotal.toLocaleString()}</span>
-                </div>
+                {confirmation.cabin.pricing.kind === 'monthly' ? (
+                  <div>
+                    <span className="text-neutral-400 block text-[11px]">Monthly Rent (Indicative, To Confirm)</span>
+                    <span className="text-xl font-bold font-mono text-white">{formatKes(confirmation.cabin.pricing.kes)}</span>
+                    <span className="block text-[11px] text-neutral-400">≈ {formatUsd(confirmation.cabin.pricing.usd)} / month</span>
+                  </div>
+                ) : (
+                  <div>
+                    <span className="text-neutral-400 block text-[11px]">Estimated Total (To Confirm)</span>
+                    <span className="text-xl font-bold font-mono text-white">${confirmation.grandTotal.toLocaleString()}</span>
+                  </div>
+                )}
                 <span className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full text-[11px] font-medium">
                   Awaiting Confirmation
                 </span>
@@ -306,10 +336,20 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                         <span className="text-xs font-semibold text-white block truncate">{cabin.name}</span>
                         <span className="text-[11px] text-neutral-400 block truncate">{cabin.location.split(',')[0]}</span>
                       </div>
-                      <div className="mt-4 pt-2 border-t border-white/10 flex items-center justify-between text-xs">
-                        <span className="font-mono text-white font-medium">${cabin.pricePerNight}</span>
-                        <span className="text-[10px] text-neutral-400">/ night</span>
+                      <div className="mt-4 pt-2 border-t border-white/10 flex items-center justify-between gap-2 text-xs">
+                        {cabin.pricing.kind === 'monthly' ? (
+                          <>
+                            <span className="font-mono text-white font-medium">{formatKes(cabin.pricing.kes)}</span>
+                            <span className="text-[10px] text-neutral-400">/ month</span>
+                          </>
+                        ) : (
+                          <>
+                            <span className="font-mono text-white font-medium">${cabin.pricing.usd}</span>
+                            <span className="text-[10px] text-neutral-400">/ night</span>
+                          </>
+                        )}
                       </div>
+                      <span className="mt-1 text-[10px] text-neutral-500">Indicative, to confirm</span>
                     </button>
                   ))}
                 </div>
@@ -318,8 +358,22 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
               {/* Step 2: Dates & Party size */}
               <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
                 <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-4">
-                  2. Dates & Guests
+                  {isViewing ? '2. Preferred Viewing Date' : '2. Dates & Guests'}
                 </label>
+                {isViewing ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                      <label className="block text-[11px] text-neutral-400 mb-1.5 font-light">Viewing Date</label>
+                      <input
+                        type="date"
+                        value={checkInDate}
+                        min="2026-01-01"
+                        onChange={(e) => setCheckInDate(e.target.value)}
+                        className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white transition-colors"
+                      />
+                    </div>
+                  </div>
+                ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div>
                     <label className="block text-[11px] text-neutral-400 mb-1.5 font-light">Check-In</label>
@@ -356,6 +410,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                     </select>
                   </div>
                 </div>
+                )}
                 {formErrors.dates && (
                   <p className="text-red-400 text-xs mt-2 flex items-center gap-1">
                     <AlertCircle className="w-3.5 h-3.5" /> {formErrors.dates}
@@ -363,7 +418,8 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 )}
               </div>
 
-              {/* Step 3: Curated Add-ons */}
+              {/* Step 3: Curated Add-ons (furnished stays only) */}
+              {!isViewing && (
               <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
                 <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-1">
                   3. Extras for Furnished Stays
@@ -407,10 +463,12 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 </div>
               </div>
 
+              )}
+
               {/* Step 4: Your Details Details */}
               <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
                 <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-4">
-                  4. Your Details
+                  {isViewing ? '3. Your Details' : '4. Your Details'}
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
@@ -487,17 +545,38 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                     <h4 className="font-semibold text-white text-base">{activeCabin.name}</h4>
                     <p className="text-xs text-neutral-400 font-light">{activeCabin.location}</p>
                     <div className="flex items-center gap-2 mt-1 text-[11px] text-neutral-400">
-                                            <span>{nights} {nights === 1 ? 'Night' : 'Nights'}</span>
-                      <span>·</span>
-                      <span>{guests} {guests === 1 ? 'Guest' : 'Guests'}</span>
+                      {isViewing ? (
+                        <span>Viewing request · {checkInDate}</span>
+                      ) : (
+                        <>
+                          <span>{nights} {nights === 1 ? 'Night' : 'Nights'}</span>
+                          <span>·</span>
+                          <span>{guests} {guests === 1 ? 'Guest' : 'Guests'}</span>
+                        </>
+                      )}
                     </div>
                   </div>
                 </div>
 
+                {pricing.kind === 'monthly' ? (
+                <div className="py-6 flex items-baseline justify-between">
+                  <div>
+                    <span className="block text-xs uppercase tracking-wider text-neutral-400">Monthly Rent</span>
+                    <span className="text-[11px] text-neutral-500 font-light">Indicative, to confirm</span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-2xl sm:text-3xl font-bold font-mono text-white tabular-nums">
+                      {formatKes(pricing.kes)}
+                    </span>
+                    <span className="block text-xs text-neutral-400 tabular-nums">≈ {formatUsd(pricing.usd)}</span>
+                  </div>
+                </div>
+                ) : (
+                <>
                 {/* Price Breakdown */}
                 <div className="py-6 space-y-3 text-xs border-b border-white/10">
                   <div className="flex justify-between text-neutral-300">
-                    <span>${activeCabin.pricePerNight} × {nights} Nights</span>
+                    <span>${pricing.usd} × {nights} Nights</span>
                     <span className="font-mono text-white tabular-nums">${nightlyTotal.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between text-neutral-300">
@@ -528,6 +607,8 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                     </span>
                   </div>
                 </div>
+                </>
+                )}
 
                 {/* Submit button */}
                 <button
@@ -540,7 +621,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                     <span>Sending...</span>
                   ) : (
                     <>
-                      <span>Send Request</span>
+                      <span>{isViewing ? 'Request a Viewing' : 'Send Request'}</span>
                       <ArrowRight className="w-4 h-4" />
                     </>
                   )}
