@@ -159,104 +159,104 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
   };
 
   return (
-    <section id="booking" className="py-16 sm:py-24 bg-[#08090b] text-neutral-100 scroll-mt-12">
+    <section id="booking" className="py-16 sm:py-24 bg-ivory text-ink scroll-mt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-line">
           <div>
-            <span className="text-xs uppercase tracking-[0.25em] text-neutral-400 font-light block mb-2">
+            <span className="text-xs uppercase tracking-[0.25em] text-royal font-light block mb-2">
               06. Book or Enquire
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-sans font-medium text-white tracking-tight">
-              Plan Your <span className="font-serif-editorial italic font-normal text-neutral-200">Stay or Viewing</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-sans font-medium text-ink tracking-tight">
+              Plan Your <span className="font-serif-editorial italic font-normal text-ink">Stay or Viewing</span>
             </h2>
           </div>
-          <p className="text-neutral-400 text-sm max-w-md font-light leading-relaxed">
+          <p className="text-muted text-sm max-w-md font-light leading-relaxed">
             Request dates at the Furnished Residence, or tell us when you would like to view an apartment. Our team will confirm availability and pricing with you directly.
           </p>
         </div>
 
         {/* Confirmation Screen */}
         {confirmation ? (
-          <div className="max-w-3xl mx-auto bg-[#0d0f14] border border-white/15 rounded-3xl p-8 sm:p-12 shadow-2xl animate-in zoom-in-95 duration-300">
+          <div className="max-w-3xl mx-auto bg-surface border border-line rounded-3xl p-8 sm:p-12 shadow-2xl animate-in zoom-in-95 duration-300">
             <div className="text-center mb-8">
-              <div className="w-14 h-14 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 rounded-full bg-royal-tint border border-royal/20 text-royal flex items-center justify-center mx-auto mb-4">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
-              <span className="text-xs uppercase tracking-[0.2em] text-emerald-400 font-semibold">
+              <span className="text-xs uppercase tracking-[0.2em] text-royal font-semibold">
                 Request Received
               </span>
-              <h3 className="text-2xl sm:text-3xl font-display-italiana text-white mt-1">
+              <h3 className="text-2xl sm:text-3xl font-display-italiana text-ink mt-1">
                 We Will Be in Touch Soon
               </h3>
-              <p className="text-neutral-400 text-xs mt-2">
-                Reference: <span className="font-mono font-bold text-white text-sm">{confirmation.bookingId}</span>
+              <p className="text-muted text-xs mt-2">
+                Reference: <span className="font-mono font-bold text-ink text-sm">{confirmation.bookingId}</span>
               </p>
             </div>
 
             {/* Receipt Card */}
-            <div className="bg-[#12151b] border border-white/10 rounded-2xl p-6 mb-8 divide-y divide-white/10 text-xs">
+            <div className="bg-mist border border-line rounded-2xl p-6 mb-8 divide-y divide-line text-xs">
               <div className="pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
-                  <span className="text-neutral-400 block text-[11px]">Selected Apartment</span>
-                  <span className="text-base font-semibold text-white">{confirmation.cabin.name}</span>
-                  <p className="text-neutral-400 flex items-center gap-1 mt-0.5">
-                    <MapPin className="w-3 h-3 text-neutral-500" />
+                  <span className="text-muted block text-[11px]">Selected Apartment</span>
+                  <span className="text-base font-semibold text-ink">{confirmation.cabin.name}</span>
+                  <p className="text-muted flex items-center gap-1 mt-0.5">
+                    <MapPin className="w-3 h-3 text-muted" />
                     {confirmation.cabin.location}
                   </p>
                 </div>
                 <div className="text-left sm:text-right">
-                  <span className="text-neutral-400 block text-[11px]">Your Details</span>
-                  <span className="text-white font-medium">{confirmation.guestName}</span>
-                  <p className="text-neutral-400">{confirmation.guestEmail}</p>
+                  <span className="text-muted block text-[11px]">Your Details</span>
+                  <span className="text-ink font-medium">{confirmation.guestName}</span>
+                  <p className="text-muted">{confirmation.guestEmail}</p>
                 </div>
               </div>
 
               {confirmation.requestType === 'viewing' ? (
               <div className="py-4 grid grid-cols-2 gap-4">
                 <div>
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Preferred Viewing Date</span>
-                  <span className="text-white font-medium">{confirmation.checkIn}</span>
+                  <span className="text-muted uppercase tracking-wider text-[10px] block">Preferred Viewing Date</span>
+                  <span className="text-ink font-medium">{confirmation.checkIn}</span>
                 </div>
                 <div>
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Request</span>
-                  <span className="text-white font-medium">Viewing, long-term lease</span>
+                  <span className="text-muted uppercase tracking-wider text-[10px] block">Request</span>
+                  <span className="text-ink font-medium">Viewing, long-term lease</span>
                 </div>
               </div>
               ) : (
               <div className="py-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
                 <div>
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Check-In</span>
-                  <span className="text-white font-medium">{confirmation.checkIn}</span>
-                  <span className="text-neutral-500 block text-[10px]">From 3:00 PM</span>
+                  <span className="text-muted uppercase tracking-wider text-[10px] block">Check-In</span>
+                  <span className="text-ink font-medium">{confirmation.checkIn}</span>
+                  <span className="text-muted block text-[10px]">From 3:00 PM</span>
                 </div>
                 <div>
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Check-Out</span>
-                  <span className="text-white font-medium">{confirmation.checkOut}</span>
-                  <span className="text-neutral-500 block text-[10px]">Until 11:00 AM</span>
+                  <span className="text-muted uppercase tracking-wider text-[10px] block">Check-Out</span>
+                  <span className="text-ink font-medium">{confirmation.checkOut}</span>
+                  <span className="text-muted block text-[10px]">Until 11:00 AM</span>
                 </div>
                 <div>
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Duration</span>
-                  <span className="text-white font-medium">{confirmation.nights} Nights</span>
+                  <span className="text-muted uppercase tracking-wider text-[10px] block">Duration</span>
+                  <span className="text-ink font-medium">{confirmation.nights} Nights</span>
                 </div>
                 <div>
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block">Party</span>
-                  <span className="text-white font-medium">{confirmation.guests} Guests</span>
+                  <span className="text-muted uppercase tracking-wider text-[10px] block">Party</span>
+                  <span className="text-ink font-medium">{confirmation.guests} Guests</span>
                 </div>
               </div>
               )}
 
               {confirmation.addOns.length > 0 && (
                 <div className="py-4">
-                  <span className="text-neutral-500 uppercase tracking-wider text-[10px] block mb-2">
+                  <span className="text-muted uppercase tracking-wider text-[10px] block mb-2">
                     Requested Extras
                   </span>
                   <div className="space-y-1.5">
                     {confirmation.addOns.map((add) => (
-                      <div key={add.id} className="flex justify-between text-neutral-300">
+                      <div key={add.id} className="flex justify-between text-ink/80">
                         <span>{add.name}</span>
-                        <span className="font-mono text-neutral-400">${add.price}</span>
+                        <span className="font-mono text-muted">${add.price}</span>
                       </div>
                     ))}
                   </div>
@@ -266,17 +266,17 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
               <div className="pt-4 flex items-center justify-between">
                 {confirmation.cabin.pricing.kind === 'monthly' ? (
                   <div>
-                    <span className="text-neutral-400 block text-[11px]">Monthly Rent (Indicative, To Confirm)</span>
-                    <span className="text-xl font-bold font-mono text-white">{formatKes(confirmation.cabin.pricing.kes)}</span>
-                    <span className="block text-[11px] text-neutral-400">≈ {formatUsd(confirmation.cabin.pricing.usd)} / month</span>
+                    <span className="text-muted block text-[11px]">Monthly Rent (Indicative, To Confirm)</span>
+                    <span className="text-xl font-bold font-mono text-ink">{formatKes(confirmation.cabin.pricing.kes)}</span>
+                    <span className="block text-[11px] text-muted">≈ {formatUsd(confirmation.cabin.pricing.usd)} / month</span>
                   </div>
                 ) : (
                   <div>
-                    <span className="text-neutral-400 block text-[11px]">Estimated Total (To Confirm)</span>
-                    <span className="text-xl font-bold font-mono text-white">${confirmation.grandTotal.toLocaleString()}</span>
+                    <span className="text-muted block text-[11px]">Estimated Total (To Confirm)</span>
+                    <span className="text-xl font-bold font-mono text-ink">${confirmation.grandTotal.toLocaleString()}</span>
                   </div>
                 )}
-                <span className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full text-[11px] font-medium">
+                <span className="px-3 py-1 bg-royal-tint border border-royal/20 text-royal rounded-full text-[11px] font-medium">
                   Awaiting Confirmation
                 </span>
               </div>
@@ -288,21 +288,21 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 href={createCalendarUrl()}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto px-6 py-3 bg-white text-black font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 text-center"
+                className="w-full sm:w-auto px-6 py-3 bg-royal text-on-dark font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-royal-hover transition-colors flex items-center justify-center gap-2 text-center"
               >
                 <Calendar className="w-4 h-4" />
                 Add to Calendar
               </a>
               <button
                 onClick={handlePrint}
-                className="w-full sm:w-auto px-6 py-3 bg-white/10 text-white font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-white/20 transition-colors flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-6 py-3 bg-royal-tint text-ink font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-royal-tint transition-colors flex items-center justify-center gap-2"
               >
                 <Download className="w-4 h-4" />
                 Print Confirmation
               </button>
               <button
                 onClick={() => setConfirmation(null)}
-                className="w-full sm:w-auto px-6 py-3 border border-white/20 text-neutral-300 font-semibold text-xs uppercase tracking-wider rounded-full hover:text-white hover:border-white transition-colors"
+                className="w-full sm:w-auto px-6 py-3 border border-line text-ink/80 font-semibold text-xs uppercase tracking-wider rounded-full hover:text-royal hover:border-royal transition-colors"
               >
                 Make Another Request
               </button>
@@ -316,8 +316,8 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
             <div className="lg:col-span-7 space-y-8">
               
               {/* Step 1: Cabin Picker */}
-              <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
-                <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-4">
+              <div className="bg-surface border border-line rounded-2xl p-6 shadow-soft">
+                <label className="block text-xs uppercase tracking-widest text-muted font-medium mb-4">
                   1. Choose Your Apartment
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -328,82 +328,82 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                       onClick={() => handleSelectCabin(cabin)}
                       className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
                         activeCabin.id === cabin.id
-                          ? 'border-white bg-white/10 shadow-lg'
-                          : 'border-white/10 bg-white/[0.02] hover:border-white/30 text-neutral-400'
+                          ? 'border-royal bg-royal-tint shadow-soft'
+                          : 'border-line bg-surface hover:border-royal/40 text-muted'
                       }`}
                     >
                       <div>
-                        <span className="text-xs font-semibold text-white block truncate">{cabin.name}</span>
-                        <span className="text-[11px] text-neutral-400 block truncate">{cabin.location.split(',')[0]}</span>
+                        <span className="text-xs font-semibold text-ink block truncate">{cabin.name}</span>
+                        <span className="text-[11px] text-muted block truncate">{cabin.location.split(',')[0]}</span>
                       </div>
-                      <div className="mt-4 pt-2 border-t border-white/10 flex items-center justify-between gap-2 text-xs">
+                      <div className="mt-4 pt-2 border-t border-line flex items-center justify-between gap-2 text-xs">
                         {cabin.pricing.kind === 'monthly' ? (
                           <>
-                            <span className="font-mono text-white font-medium">{formatKes(cabin.pricing.kes)}</span>
-                            <span className="text-[10px] text-neutral-400">/ month</span>
+                            <span className="font-mono text-ink font-medium">{formatKes(cabin.pricing.kes)}</span>
+                            <span className="text-[10px] text-muted">/ month</span>
                           </>
                         ) : (
                           <>
-                            <span className="font-mono text-white font-medium">${cabin.pricing.usd}</span>
-                            <span className="text-[10px] text-neutral-400">/ night</span>
+                            <span className="font-mono text-ink font-medium">${cabin.pricing.usd}</span>
+                            <span className="text-[10px] text-muted">/ night</span>
                           </>
                         )}
                       </div>
-                      <span className="mt-1 text-[10px] text-neutral-500">Indicative, to confirm</span>
+                      <span className="mt-1 text-[10px] text-muted">Indicative, to confirm</span>
                     </button>
                   ))}
                 </div>
               </div>
 
               {/* Step 2: Dates & Party size */}
-              <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
-                <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-4">
+              <div className="bg-surface border border-line rounded-2xl p-6 shadow-soft">
+                <label className="block text-xs uppercase tracking-widest text-muted font-medium mb-4">
                   {isViewing ? '2. Preferred Viewing Date' : '2. Dates & Guests'}
                 </label>
                 {isViewing ? (
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
-                      <label className="block text-[11px] text-neutral-400 mb-1.5 font-light">Viewing Date</label>
+                      <label className="block text-[11px] text-muted mb-1.5 font-light">Viewing Date</label>
                       <input
                         type="date"
                         value={checkInDate}
                         min="2026-01-01"
                         onChange={(e) => setCheckInDate(e.target.value)}
-                        className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white transition-colors"
+                        className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink focus:outline-none focus:border-royal transition-colors"
                       />
                     </div>
                   </div>
                 ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div>
-                    <label className="block text-[11px] text-neutral-400 mb-1.5 font-light">Check-In</label>
+                    <label className="block text-[11px] text-muted mb-1.5 font-light">Check-In</label>
                     <input
                       type="date"
                       value={checkInDate}
                       min="2026-01-01"
                       onChange={(e) => setCheckInDate(e.target.value)}
-                      className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white transition-colors"
+                      className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink focus:outline-none focus:border-royal transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] text-neutral-400 mb-1.5 font-light">Check-Out</label>
+                    <label className="block text-[11px] text-muted mb-1.5 font-light">Check-Out</label>
                     <input
                       type="date"
                       value={checkOutDate}
                       min={checkInDate}
                       onChange={(e) => setCheckOutDate(e.target.value)}
-                      className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white transition-colors"
+                      className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink focus:outline-none focus:border-royal transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] text-neutral-400 mb-1.5 font-light">Guests</label>
+                    <label className="block text-[11px] text-muted mb-1.5 font-light">Guests</label>
                     <select
                       value={guests}
                       onChange={(e) => setGuests(Number(e.target.value))}
-                      className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white transition-colors cursor-pointer"
+                      className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink focus:outline-none focus:border-royal transition-colors cursor-pointer"
                     >
                       {Array.from({ length: activeCabin.guestsMax }, (_, i) => i + 1).map((num) => (
-                        <option key={num} value={num} className="bg-[#14171d] text-white">
+                        <option key={num} value={num} className="bg-surface text-ink">
                           {num} {num === 1 ? 'Guest' : 'Guests'} (Max {activeCabin.guestsMax})
                         </option>
                       ))}
@@ -412,7 +412,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 </div>
                 )}
                 {formErrors.dates && (
-                  <p className="text-red-400 text-xs mt-2 flex items-center gap-1">
+                  <p className="text-danger text-xs mt-2 flex items-center gap-1">
                     <AlertCircle className="w-3.5 h-3.5" /> {formErrors.dates}
                   </p>
                 )}
@@ -420,11 +420,11 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
 
               {/* Step 3: Curated Add-ons (furnished stays only) */}
               {!isViewing && (
-              <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
-                <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-1">
+              <div className="bg-surface border border-line rounded-2xl p-6 shadow-soft">
+                <label className="block text-xs uppercase tracking-widest text-muted font-medium mb-1">
                   3. Extras for Furnished Stays
                 </label>
-                <p className="text-xs text-neutral-400 mb-4 font-light">
+                <p className="text-xs text-muted mb-4 font-light">
                   Optional services for stays at the Furnished Residence.
                 </p>
 
@@ -437,24 +437,24 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                         onClick={() => toggleAddOn(addon.id)}
                         className={`p-4 rounded-xl border transition-all cursor-pointer flex items-center justify-between gap-4 ${
                           isSelected
-                            ? 'bg-white/10 border-white'
-                            : 'bg-white/[0.02] border-white/10 hover:border-white/20'
+                            ? 'bg-royal-tint border-royal'
+                            : 'bg-surface border-line hover:border-royal/40'
                         }`}
                       >
                         <div className="flex items-start gap-3">
                           <div className={`w-5 h-5 rounded-md flex items-center justify-center shrink-0 mt-0.5 border ${
-                            isSelected ? 'bg-white text-black border-white' : 'border-white/30 bg-transparent'
+                            isSelected ? 'bg-royal text-on-dark border-royal' : 'border-royal/40 bg-transparent'
                           }`}>
                             {isSelected && <CheckCircle2 className="w-3.5 h-3.5" />}
                           </div>
                           <div>
-                            <span className="text-xs font-medium text-white block">{addon.name}</span>
-                            <span className="text-[11px] text-neutral-400 font-light block leading-relaxed mt-0.5">
+                            <span className="text-xs font-medium text-ink block">{addon.name}</span>
+                            <span className="text-[11px] text-muted font-light block leading-relaxed mt-0.5">
                               {addon.description}
                             </span>
                           </div>
                         </div>
-                        <span className="text-xs font-mono font-medium text-white shrink-0">
+                        <span className="text-xs font-mono font-medium text-ink shrink-0">
                           +${addon.price}
                         </span>
                       </div>
@@ -466,55 +466,55 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
               )}
 
               {/* Step 4: Your Details Details */}
-              <div className="bg-[#0d0f14] border border-white/10 rounded-2xl p-6">
-                <label className="block text-xs uppercase tracking-widest text-neutral-400 font-medium mb-4">
+              <div className="bg-surface border border-line rounded-2xl p-6 shadow-soft">
+                <label className="block text-xs uppercase tracking-widest text-muted font-medium mb-4">
                   {isViewing ? '3. Your Details' : '4. Your Details'}
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <label className="block text-[11px] text-neutral-400 mb-1 font-light">Full Name</label>
+                    <label className="block text-[11px] text-muted mb-1 font-light">Full Name</label>
                     <input
                       type="text"
                       placeholder="e.g. Julian Vance"
                       value={guestName}
                       onChange={(e) => setGuestName(e.target.value)}
-                      className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                      className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink placeholder:text-muted focus:outline-none focus:border-royal"
                     />
                     {formErrors.name && (
-                      <span className="text-red-400 text-[10px] mt-1 block">{formErrors.name}</span>
+                      <span className="text-danger text-[10px] mt-1 block">{formErrors.name}</span>
                     )}
                   </div>
                   <div>
-                    <label className="block text-[11px] text-neutral-400 mb-1 font-light">Email Address</label>
+                    <label className="block text-[11px] text-muted mb-1 font-light">Email Address</label>
                     <input
                       type="email"
                       placeholder="e.g. julian@studio.co"
                       value={guestEmail}
                       onChange={(e) => setGuestEmail(e.target.value)}
-                      className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                      className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink placeholder:text-muted focus:outline-none focus:border-royal"
                     />
                     {formErrors.email && (
-                      <span className="text-red-400 text-[10px] mt-1 block">{formErrors.email}</span>
+                      <span className="text-danger text-[10px] mt-1 block">{formErrors.email}</span>
                     )}
                   </div>
                 </div>
 
                 <div className="mb-4">
-                  <label className="block text-[11px] text-neutral-400 mb-1 font-light">Contact Number</label>
+                  <label className="block text-[11px] text-muted mb-1 font-light">Contact Number</label>
                   <input
                     type="tel"
                     placeholder="e.g. +254 712 345 678"
                     value={guestPhone}
                     onChange={(e) => setGuestPhone(e.target.value)}
-                    className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                    className="w-full bg-surface border border-line rounded-xl px-3.5 py-2.5 text-xs text-ink placeholder:text-muted focus:outline-none focus:border-royal"
                   />
                   {formErrors.phone && (
-                    <span className="text-red-400 text-[10px] mt-1 block">{formErrors.phone}</span>
+                    <span className="text-danger text-[10px] mt-1 block">{formErrors.phone}</span>
                   )}
                 </div>
 
                 <div>
-                  <label className="block text-[11px] text-neutral-400 mb-1 font-light">
+                  <label className="block text-[11px] text-muted mb-1 font-light">
                     Special Inquiries or Dietary Preferences (Optional)
                   </label>
                   <textarea
@@ -522,7 +522,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                     placeholder="Preferred viewing times, move-in date, arrival time..."
                     value={specialRequests}
                     onChange={(e) => setSpecialRequests(e.target.value)}
-                    className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                    className="w-full bg-surface border border-line rounded-xl px-3.5 py-2 text-xs text-ink placeholder:text-muted focus:outline-none focus:border-royal"
                   />
                 </div>
               </div>
@@ -531,10 +531,10 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
 
             {/* Right Column: Live Price Card & Instant Booking Action */}
             <div className="lg:col-span-5 sticky top-28">
-              <div className="bg-[#0d0f14] border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl">
+              <div className="bg-surface border border-line rounded-3xl p-6 sm:p-8 shadow-2xl">
                 {/* Property thumbnail header */}
-                <div className="flex gap-4 items-center pb-6 border-b border-white/10">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden bg-black shrink-0 border border-white/10">
+                <div className="flex gap-4 items-center pb-6 border-b border-line">
+                  <div className="w-20 h-20 rounded-xl overflow-hidden bg-mist shrink-0 border border-line">
                     <img
                       src={activeCabin.heroImage}
                       alt={activeCabin.name}
@@ -542,9 +542,9 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                     />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white text-base">{activeCabin.name}</h4>
-                    <p className="text-xs text-neutral-400 font-light">{activeCabin.location}</p>
-                    <div className="flex items-center gap-2 mt-1 text-[11px] text-neutral-400">
+                    <h4 className="font-semibold text-ink text-base">{activeCabin.name}</h4>
+                    <p className="text-xs text-muted font-light">{activeCabin.location}</p>
+                    <div className="flex items-center gap-2 mt-1 text-[11px] text-muted">
                       {isViewing ? (
                         <span>Viewing request · {checkInDate}</span>
                       ) : (
@@ -561,36 +561,36 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 {pricing.kind === 'monthly' ? (
                 <div className="py-6 flex items-baseline justify-between">
                   <div>
-                    <span className="block text-xs uppercase tracking-wider text-neutral-400">Monthly Rent</span>
-                    <span className="text-[11px] text-neutral-500 font-light">Indicative, to confirm</span>
+                    <span className="block text-xs uppercase tracking-wider text-muted">Monthly Rent</span>
+                    <span className="text-[11px] text-muted font-light">Indicative, to confirm</span>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-bold font-mono text-white tabular-nums">
+                    <span className="text-2xl sm:text-3xl font-bold font-mono text-ink tabular-nums">
                       {formatKes(pricing.kes)}
                     </span>
-                    <span className="block text-xs text-neutral-400 tabular-nums">≈ {formatUsd(pricing.usd)}</span>
+                    <span className="block text-xs text-muted tabular-nums">≈ {formatUsd(pricing.usd)}</span>
                   </div>
                 </div>
                 ) : (
                 <>
                 {/* Price Breakdown */}
-                <div className="py-6 space-y-3 text-xs border-b border-white/10">
-                  <div className="flex justify-between text-neutral-300">
+                <div className="py-6 space-y-3 text-xs border-b border-line">
+                  <div className="flex justify-between text-ink/80">
                     <span>${pricing.usd} × {nights} Nights</span>
-                    <span className="font-mono text-white tabular-nums">${nightlyTotal.toLocaleString()}</span>
+                    <span className="font-mono text-ink tabular-nums">${nightlyTotal.toLocaleString()}</span>
                   </div>
-                  <div className="flex justify-between text-neutral-300">
+                  <div className="flex justify-between text-ink/80">
                     <span>Cleaning</span>
-                    <span className="font-mono text-white tabular-nums">${cleaningFee}</span>
+                    <span className="font-mono text-ink tabular-nums">${cleaningFee}</span>
                   </div>
-                  <div className="flex justify-between text-neutral-300">
+                  <div className="flex justify-between text-ink/80">
                     <span>Service Fee</span>
-                    <span className="font-mono text-white tabular-nums">${serviceFee}</span>
+                    <span className="font-mono text-ink tabular-nums">${serviceFee}</span>
                   </div>
                   {activeAddOnsList.length > 0 && (
-                    <div className="flex justify-between text-neutral-300">
+                    <div className="flex justify-between text-ink/80">
                       <span>Extras ({activeAddOnsList.length})</span>
-                      <span className="font-mono text-white tabular-nums">+${addOnsTotal}</span>
+                      <span className="font-mono text-ink tabular-nums">+${addOnsTotal}</span>
                     </div>
                   )}
                 </div>
@@ -598,11 +598,11 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 {/* Grand Total */}
                 <div className="py-6 flex items-baseline justify-between">
                   <div>
-                    <span className="block text-xs uppercase tracking-wider text-neutral-400">Estimated Total</span>
-                    <span className="text-[11px] text-neutral-500 font-light">Indicative, to be confirmed</span>
+                    <span className="block text-xs uppercase tracking-wider text-muted">Estimated Total</span>
+                    <span className="text-[11px] text-muted font-light">Indicative, to be confirmed</span>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-bold font-mono text-white tabular-nums">
+                    <span className="text-2xl sm:text-3xl font-bold font-mono text-ink tabular-nums">
                       ${grandTotal.toLocaleString()}
                     </span>
                   </div>
@@ -615,7 +615,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                   type="button"
                   onClick={handleCompleteReservation}
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-white hover:bg-neutral-200 text-black font-semibold text-xs uppercase tracking-widest rounded-full shadow-2xl transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                  className="w-full py-4 bg-royal hover:bg-royal-hover text-on-dark font-semibold text-xs uppercase tracking-widest rounded-full shadow-2xl transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     <span>Sending...</span>
@@ -628,13 +628,13 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
                 </button>
 
                 {/* Guarantee trust points */}
-                <div className="mt-6 pt-4 border-t border-white/5 space-y-2 text-[11px] text-neutral-400 font-light">
+                <div className="mt-6 pt-4 border-t border-line space-y-2 text-[11px] text-muted font-light">
                   <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-3.5 h-3.5 text-neutral-300" />
+                    <ShieldCheck className="w-3.5 h-3.5 text-ink/80" />
                     <span>No payment is taken online</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-3.5 h-3.5 text-neutral-300" />
+                    <Clock className="w-3.5 h-3.5 text-ink/80" />
                     <span>Our team confirms by phone or email</span>
                   </div>
                 </div>

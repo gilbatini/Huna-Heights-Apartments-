@@ -1,8 +1,38 @@
 @import "tailwindcss";
 
+/* Light theme, royal blue palette. These tokens are the only colours in the app:
+   the default Tailwind palette is cleared so no other colour utility can compile. */
+@theme {
+  --color-*: initial;
+  --color-ivory: #faf8f4;        /* page background */
+  --color-surface: #ffffff;      /* cards */
+  --color-mist: #f1f4fb;         /* alternate sections */
+  --color-ink: #0f1a33;          /* primary text */
+  --color-muted: #5b6478;        /* secondary text */
+  --color-line: #e3e6ee;         /* borders, dividers */
+  --color-royal: #2342c4;        /* primary accent */
+  --color-royal-hover: #1a3196;  /* accent hover / pressed */
+  --color-royal-tint: #e8edfc;   /* selected chips, row hover */
+  --color-deep: #0e1b4d;         /* footer, dark accents */
+  --color-gold: #c9a45c;         /* thin warm details only */
+  --color-on-dark: #ffffff;      /* text on photos and the deep band */
+  --color-amber-tint: #fbf1dd;   /* 'reserved' badge */
+  --color-amber-ink: #7a4d00;
+  --color-grey-tint: #eef0f4;    /* 'let' badge */
+  --color-grey-ink: #4a5163;
+  --color-danger: #b42318;       /* form errors */
+
+  --shadow-soft: 0 1px 2px rgb(15 26 51 / 0.06), 0 8px 24px rgb(15 26 51 / 0.06);
+  --shadow-lift: 0 2px 4px rgb(15 26 51 / 0.06), 0 16px 40px rgb(15 26 51 / 0.1);
+}
+
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-royal);
+    outline-offset: 2px;
   }
 }
 
@@ -24,14 +54,14 @@
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #08090b;
+  background: var(--color-ivory);
 }
 ::-webkit-scrollbar-thumb {
-  background: #232730;
+  background: var(--color-line);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b414f;
+  background: var(--color-muted);
 }
 
 /* Phone-only horizontal swipe rows; from sm up the same elements are grids. */
