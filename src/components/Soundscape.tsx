@@ -97,7 +97,7 @@ export const Soundscape: React.FC = () => {
     <button
       onClick={toggleSound}
       title={isPlaying ? 'Mute ambient sound' : 'Play ambient sound'}
-      className="group relative flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all text-xs font-medium text-neutral-300 hover:text-white"
+      className="group relative flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-full bg-(--nav-chip) hover:bg-(--nav-chip-hover) border border-(--nav-line) transition-all text-xs font-medium text-(--nav-fg-soft) hover:text-(--nav-fg)"
     >
       {isPlaying ? (
         <>
@@ -110,7 +110,7 @@ export const Soundscape: React.FC = () => {
         </>
       ) : (
         <>
-          <VolumeX className="w-3.5 h-3.5 text-neutral-400 group-hover:text-white" />
+          <VolumeX className="w-3.5 h-3.5 text-(--nav-fg-faint) group-hover:text-(--nav-fg)" />
           <span className="hidden sm:inline">Play Ambiance</span>
         </>
       )}
