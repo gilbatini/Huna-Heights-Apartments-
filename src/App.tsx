@@ -64,7 +64,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#08090b] text-[#e8eaed] font-sans selection:bg-white selection:text-black">
+    <div className="min-h-screen bg-page text-ink font-sans selection:bg-gold/40 selection:text-navy">
       {/* Navigation */}
       <Navbar
         onNavigate={handleNavigate}

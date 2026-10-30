@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+/* Huna Heights palette: navy, warm beige, soft gold.
+   Every colour on the site comes from these tokens. */
+@theme {
+  --color-navy: #1F2A44;        /* primary: buttons, headings, footer */
+  --color-navy-deep: #161E33;   /* hover / pressed, footer base */
+  --color-navy-soft: #3A4560;   /* secondary text on light */
+  --color-beige: #E8DCC8;       /* warm beige: chips, dividers, tints */
+  --color-gold: #C6A75E;        /* soft gold: rules, dots, accents (decorative) */
+  --color-gold-deep: #7C5F23;   /* gold for small text on light (AA) */
+
+  --color-page: #FAF7F1;        /* page background (ivory) */
+  --color-page-alt: #F3ECE0;    /* alternate section background */
+  --color-surface: #FFFFFF;     /* cards */
+  --color-field: #FBF8F3;       /* inputs */
+  --color-sand: #F1E9DB;        /* subtle fills, selected states */
+  --color-line: #E7DDCC;        /* borders */
+  --color-line-strong: #D6C7AC; /* stronger borders */
+
+  --color-ink: #1F2A44;         /* primary text */
+  --color-ink-soft: #3A4560;    /* body text */
+  --color-muted: #5A6274;       /* secondary text */
+  --color-subtle: #626877;      /* tertiary text */
+  --color-faint: #848B98;       /* placeholders, decorative */
+
+  --shadow-soft: 0 1px 2px rgba(31, 42, 68, 0.05), 0 8px 28px rgba(31, 42, 68, 0.07);
+  --shadow-lift: 0 2px 6px rgba(31, 42, 68, 0.06), 0 18px 44px rgba(31, 42, 68, 0.12);
+}
+
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -24,14 +52,14 @@
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #08090b;
+  background: #F3ECE0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #232730;
+  background: #D6C7AC;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b414f;
+  background: #B9A57F;
 }
 
 /* Phone-only horizontal swipe rows; from sm up the same elements are grids. */
@@ -43,4 +71,29 @@
   .swipe-row::-webkit-scrollbar {
     display: none;
   }
+}
+
+/* Navbar sits on the hero photo (light text) until the page scrolls,
+   then becomes an ivory bar (navy text). Children read these variables. */
+.nav-shell {
+  --nav-fg: #ffffff;
+  --nav-fg-soft: rgba(255, 255, 255, 0.84);
+  --nav-fg-faint: rgba(255, 255, 255, 0.62);
+  --nav-line: rgba(255, 255, 255, 0.18);
+  --nav-chip: rgba(255, 255, 255, 0.08);
+  --nav-chip-hover: rgba(255, 255, 255, 0.16);
+  --nav-cta-bg: #ffffff;
+  --nav-cta-fg: #1F2A44;
+  --nav-cta-hover: #F1E9DB;
+}
+.nav-shell.is-scrolled {
+  --nav-fg: #1F2A44;
+  --nav-fg-soft: #3A4560;
+  --nav-fg-faint: #626877;
+  --nav-line: #E7DDCC;
+  --nav-chip: #F1E9DB;
+  --nav-chip-hover: #E8DCC8;
+  --nav-cta-bg: #1F2A44;
+  --nav-cta-fg: #ffffff;
+  --nav-cta-hover: #161E33;
 }

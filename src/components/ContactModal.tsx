@@ -25,14 +25,14 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-navy-deep/55 backdrop-blur-md animate-in fade-in duration-200">
       <div 
-        className="relative w-full max-w-xl bg-[#0d0f14] border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl"
+        className="relative w-full max-w-xl bg-surface border border-line-strong rounded-3xl p-6 sm:p-8 shadow-lift"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 p-2 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors"
+          className="absolute top-6 right-6 p-2 rounded-full text-muted hover:text-ink hover:bg-sand transition-colors"
           aria-label="Close dialog"
         >
           <X className="w-5 h-5" />
@@ -40,19 +40,19 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
 
         {isSubmitted ? (
           <div className="py-8 text-center">
-            <div className="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-medium text-white mb-2">Message Received</h3>
-            <p className="text-xs text-neutral-300 font-light max-w-sm mx-auto mb-6 leading-relaxed">
-              Our team will get back to you at <span className="text-white font-medium">{email}</span> as soon as possible.
+            <h3 className="text-xl font-medium text-ink mb-2">Message Received</h3>
+            <p className="text-xs text-ink-soft font-light max-w-sm mx-auto mb-6 leading-relaxed">
+              Our team will get back to you at <span className="text-ink font-medium">{email}</span> as soon as possible.
             </p>
             <button
               onClick={() => {
                 setIsSubmitted(false);
                 onClose();
               }}
-              className="px-6 py-2.5 bg-white text-black font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-colors"
+              className="px-6 py-2.5 bg-navy text-white font-semibold text-xs uppercase tracking-wider rounded-full hover:bg-navy-deep transition-colors"
             >
               Close Window
             </button>
@@ -60,48 +60,48 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
         ) : (
           <div>
             <div className="mb-6">
-              <span className="text-[10px] uppercase tracking-widest text-neutral-400 font-light block mb-1">
+              <span className="text-[10px] uppercase tracking-widest text-muted font-light block mb-1">
                 Contact Us
               </span>
-              <h3 className="text-2xl font-serif-editorial text-white">
+              <h3 className="text-2xl font-serif-editorial text-ink">
                 Get in Touch with Huna Heights
               </h3>
-              <p className="text-xs text-neutral-400 font-light mt-1">
+              <p className="text-xs text-muted font-light mt-1">
                 For leasing, furnished stays, furnishing packages or anything else.
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-[11px] text-neutral-400 mb-1 font-light">Your Name</label>
+                <label className="block text-[11px] text-muted mb-1 font-light">Your Name</label>
                 <input
                   type="text"
                   required
                   placeholder="e.g. Eleanor Rigby"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                  className="w-full bg-field border border-line-strong rounded-xl px-3.5 py-2.5 text-xs text-ink placeholder:text-faint focus:outline-none focus:border-navy"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] text-neutral-400 mb-1 font-light">Email Address</label>
+                <label className="block text-[11px] text-muted mb-1 font-light">Email Address</label>
                 <input
                   type="email"
                   required
                   placeholder="e.g. eleanor@residence.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                  className="w-full bg-field border border-line-strong rounded-xl px-3.5 py-2.5 text-xs text-ink placeholder:text-faint focus:outline-none focus:border-navy"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] text-neutral-400 mb-1 font-light">Inquiry Category</label>
+                <label className="block text-[11px] text-muted mb-1 font-light">Inquiry Category</label>
                 <select
                   value={inquiryType}
                   onChange={(e) => setInquiryType(e.target.value)}
-                  className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white cursor-pointer"
+                  className="w-full bg-field border border-line-strong rounded-xl px-3.5 py-2.5 text-xs text-ink focus:outline-none focus:border-navy cursor-pointer"
                 >
                   <option value="Stay Consultation">Leasing an Apartment</option>
                   <option value="Helicopter Transfer">A Stay at the Furnished Residence</option>
@@ -111,27 +111,27 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               </div>
 
               <div>
-                <label className="block text-[11px] text-neutral-400 mb-1 font-light">Inquiry Details</label>
+                <label className="block text-[11px] text-muted mb-1 font-light">Inquiry Details</label>
                 <textarea
                   rows={3}
                   required
                   placeholder="Which apartment, preferred viewing times, move-in or arrival date..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full bg-[#14171d] border border-white/15 rounded-xl px-3.5 py-2 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white"
+                  className="w-full bg-field border border-line-strong rounded-xl px-3.5 py-2 text-xs text-ink placeholder:text-faint focus:outline-none focus:border-navy"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3.5 bg-white hover:bg-neutral-200 text-black font-semibold text-xs uppercase tracking-wider rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xl mt-2"
+                className="w-full py-3.5 bg-navy hover:bg-navy-deep text-white font-semibold text-xs uppercase tracking-wider rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-soft mt-2"
               >
                 <span>Send Message</span>
                 <Send className="w-3.5 h-3.5" />
               </button>
             </form>
 
-            <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-neutral-500 font-light">
+            <div className="mt-6 pt-4 border-t border-line flex items-center justify-between text-[11px] text-subtle font-light">
               <span>Email: to confirm</span>
               <span>Nairobi time (EAT)</span>
             </div>
