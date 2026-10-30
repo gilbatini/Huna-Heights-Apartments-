@@ -46,35 +46,35 @@ export const AMENITIES: EstateItem[] = [
 export const SERVICES: EstateItem[] = [
   {
     name: 'Front desk',
-    description: 'Staff manage building access, visitors and deliveries.',
+    description: 'Visitors and deliveries handled for you.',
   },
   {
     name: 'Easy move-in',
-    description: 'Lease documents can be signed electronically, with optional kitchen and linen packs.',
+    description: 'Sign your lease online.',
   },
   {
     name: 'Connectivity',
-    description: 'High-speed broadband available in every apartment.',
+    description: 'Fast broadband in every apartment.',
   },
   {
     name: 'Everyday convenience',
-    description: 'Wi-Fi in common areas and help with day-to-day requests.',
+    description: 'Wi-Fi in shared spaces.',
   },
   {
     name: 'Safe and secure',
-    description: 'Controlled access and CCTV, with security staff on site.',
+    description: 'Controlled access and CCTV.',
   },
   {
     name: 'Residents’ app',
-    description: 'Book shared spaces and report maintenance requests from your phone.',
+    description: 'Book spaces, report repairs.',
   },
   {
     name: 'Kitchen and dining packs',
-    description: 'Pots, pans, crockery, cutlery and glassware, ready from day one.',
+    description: 'Cookware and tableware, ready to use.',
   },
   {
     name: 'Bedding and linens',
-    description: 'Towels and bed linen in place for moving-in day.',
+    description: 'Towels and linen for move-in day.',
   },
   {
     name: 'Housekeeping',

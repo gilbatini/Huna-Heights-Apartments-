@@ -35,7 +35,7 @@ export const GallerySection: React.FC = () => {
   }, [lightboxIndex, handleNext, handlePrev]);
 
   return (
-    <section id="gallery" className="py-24 sm:py-32 bg-[#0a0c10] border-t border-white/5">
+    <section id="gallery" className="py-16 sm:py-24 bg-[#0a0c10] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Header and Filter Tabs */}

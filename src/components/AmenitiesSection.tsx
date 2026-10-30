@@ -8,7 +8,7 @@ const ToConfirm = () => (
 );
 
 export const AmenitiesSection: React.FC = () => (
-  <section id="amenities" className="py-24 sm:py-32 bg-[#08090b] text-neutral-100 border-t border-white/5">
+  <section id="amenities" className="py-16 sm:py-24 bg-[#08090b] text-neutral-100 border-t border-white/5">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-8 border-b border-white/10">
         <div>
@@ -21,7 +21,7 @@ export const AmenitiesSection: React.FC = () => (
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
         {AMENITIES.map((a, i) => (
           <article key={a.name} className="bg-[#0d0f14] border border-white/10 rounded-3xl overflow-hidden flex flex-col">
             <div className="aspect-[16/10] bg-black overflow-hidden">
@@ -56,7 +56,7 @@ export const AmenitiesSection: React.FC = () => (
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10 rounded-3xl overflow-hidden">
         {SERVICES.map((s) => (
-          <div key={s.name} className="bg-[#0d0f14] p-6 sm:p-8">
+          <div key={s.name} className="bg-[#0d0f14] p-5 sm:p-6">
             <div className="flex items-center justify-between gap-3 mb-2">
               <h3 className="text-base font-medium text-white flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-300" />

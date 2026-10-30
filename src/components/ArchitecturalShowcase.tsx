@@ -22,7 +22,7 @@ export const ArchitecturalShowcase: React.FC<ArchitecturalShowcaseProps> = ({
   };
 
   return (
-    <section id="discover" className="py-24 sm:py-32 bg-[#08090b] text-neutral-100">
+    <section id="discover" className="py-16 sm:py-24 bg-[#08090b] text-neutral-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}

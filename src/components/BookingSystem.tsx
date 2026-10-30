@@ -159,7 +159,7 @@ export const BookingSystem: React.FC<BookingSystemProps> = ({
   };
 
   return (
-    <section id="booking" className="py-24 sm:py-32 bg-[#08090b] text-neutral-100 scroll-mt-12">
+    <section id="booking" className="py-16 sm:py-24 bg-[#08090b] text-neutral-100 scroll-mt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}

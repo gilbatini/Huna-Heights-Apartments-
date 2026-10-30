@@ -3,7 +3,7 @@ import { Compass, Feather, Leaf, SunMedium } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-[#08090b] text-neutral-100 border-t border-white/5">
+    <section id="about" className="py-16 sm:py-24 bg-[#08090b] text-neutral-100 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
