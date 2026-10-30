@@ -21,9 +21,12 @@ export const AmenitiesSection: React.FC = () => (
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+      <div className="swipe-row flex overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible gap-4 sm:grid sm:grid-cols-2 sm:gap-6 mb-16">
         {AMENITIES.map((a, i) => (
-          <article key={a.name} className="bg-[#0d0f14] border border-white/10 rounded-3xl overflow-hidden flex flex-col">
+          <article
+            key={a.name}
+            className="shrink-0 w-[82%] snap-start sm:w-auto bg-[#0d0f14] border border-white/10 rounded-3xl overflow-hidden flex flex-col"
+          >
             <div className="aspect-[16/10] bg-black overflow-hidden">
               <img
                 src={AMENITY_IMAGES[i % AMENITY_IMAGES.length]}
@@ -54,9 +57,12 @@ export const AmenitiesSection: React.FC = () => (
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10 rounded-3xl overflow-hidden">
+      <div className="swipe-row flex overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:mx-0 sm:px-0 sm:pb-0 gap-3 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-px sm:bg-white/10 sm:border sm:border-white/10 sm:rounded-3xl sm:overflow-hidden">
         {SERVICES.map((s) => (
-          <div key={s.name} className="bg-[#0d0f14] p-5 sm:p-6">
+          <div
+            key={s.name}
+            className="shrink-0 w-[72%] snap-start rounded-2xl border border-white/10 sm:w-auto sm:rounded-none sm:border-0 bg-[#0d0f14] p-5 sm:p-6"
+          >
             <div className="flex items-center justify-between gap-3 mb-2">
               <h3 className="text-base font-medium text-white flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-300" />

@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { RATES, RENTS, UNITS, Unit, UnitStatus, formatKes, formatUsd } from '../data/estate';
 
+// Collapsed table: 4 rows on phone, 6 from sm up (rows 5-6 are hidden below sm).
 const PREVIEW_COUNT = 6;
+const PHONE_PREVIEW_COUNT = 4;
 const DEFAULT_TYPE = '2 Bedroom';
 
 const STATUS_ORDER: Record<UnitStatus, number> = { available: 0, reserved: 1, let: 2 };
@@ -43,7 +45,14 @@ export const AvailabilitySection: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
   const active = TYPES.find((t) => t.type === type) ?? TYPES[0];
   const shown = expanded ? active.units : active.units.slice(0, PREVIEW_COUNT);
-  const hidden = active.units.length - PREVIEW_COUNT;
+  const rowRef = useRef<HTMLDivElement>(null);
+
+  // On phone the cards are a swipe row; bring the default selection into view without scrolling the page.
+  useEffect(() => {
+    const row = rowRef.current;
+    const card = row?.querySelector<HTMLElement>('[aria-selected="true"]');
+    if (row && card && row.scrollWidth > row.clientWidth) row.scrollLeft = card.offsetLeft - row.offsetLeft - 16;
+  }, []);
 
   const selectType = (next: string) => {
     setType(next);
@@ -72,7 +81,7 @@ export const AvailabilitySection: React.FC = () => {
         </div>
 
         {/* One summary card per type; selecting a card filters the table below */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8" role="tablist" aria-label="Apartment type">
+        <div ref={rowRef} className="swipe-row flex overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible gap-3 sm:grid sm:grid-cols-3 sm:gap-4 mb-8" role="tablist" aria-label="Apartment type">
           {TYPES.map((t) => {
             const selected = t.type === active.type;
             return (
@@ -83,7 +92,7 @@ export const AvailabilitySection: React.FC = () => {
                 aria-selected={selected}
                 aria-controls="availability-units"
                 onClick={() => selectType(t.type)}
-                className={`text-left rounded-2xl border p-5 transition-all cursor-pointer ${
+                className={`shrink-0 w-[78%] snap-start sm:w-auto text-left rounded-2xl border p-5 transition-all cursor-pointer ${
                   selected
                     ? 'border-white bg-white/10 shadow-lg'
                     : 'border-white/10 bg-[#0d0f14] hover:border-white/30'
@@ -138,8 +147,11 @@ export const AvailabilitySection: React.FC = () => {
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5 font-light text-neutral-300">
-              {shown.map((u) => (
-                <tr key={u.number} className="hover:bg-white/[0.02] transition-colors">
+              {shown.map((u, i) => (
+                <tr
+                  key={u.number}
+                  className={`hover:bg-white/[0.02] transition-colors ${!expanded && i >= PHONE_PREVIEW_COUNT ? 'max-sm:hidden' : ''}`}
+                >
                   <td className="px-2.5 sm:px-5 py-3.5 font-mono tabular-nums text-white">{u.number}</td>
                   <td className="hidden sm:table-cell px-5 py-3.5 tabular-nums">{u.floor}</td>
                   <td className="px-2.5 sm:px-5 py-3.5 tabular-nums whitespace-nowrap">
@@ -170,8 +182,12 @@ export const AvailabilitySection: React.FC = () => {
             </tbody>
           </table>
 
-          {hidden > 0 && (
-            <div className="border-t border-white/10 p-4 flex justify-center">
+          {active.units.length > PHONE_PREVIEW_COUNT && (
+            <div
+              className={`border-t border-white/10 p-4 flex justify-center ${
+                active.units.length <= PREVIEW_COUNT ? 'sm:hidden' : ''
+              }`}
+            >
               <button
                 type="button"
                 aria-expanded={expanded}

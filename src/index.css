@@ -33,3 +33,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #3b414f;
 }
+
+/* Phone-only horizontal swipe rows; from sm up the same elements are grids. */
+@media (max-width: 639px) {
+  .swipe-row {
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .swipe-row::-webkit-scrollbar {
+    display: none;
+  }
+}
