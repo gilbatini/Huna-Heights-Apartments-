@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Volume2, VolumeX, Sparkles } from 'lucide-react';
 
-export const Soundscape: React.FC = () => {
+// onDark: the nav is over the hero photo (light text) rather than scrolled onto the page.
+export const Soundscape: React.FC<{ onDark?: boolean }> = ({ onDark = false }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioCtxRef = useRef<AudioContext | null>(null);
   const gainNodeRef = useRef<GainNode | null>(null);
@@ -97,20 +98,24 @@ export const Soundscape: React.FC = () => {
     <button
       onClick={toggleSound}
       title={isPlaying ? 'Mute ambient sound' : 'Play ambient sound'}
-      className="group relative flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all text-xs font-medium text-neutral-300 hover:text-white"
+      className={`group relative flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-full border transition-all text-xs font-medium ${
+        onDark
+          ? 'bg-on-dark/5 hover:bg-on-dark/10 border-on-dark/10 hover:border-on-dark/20 text-on-dark/85 hover:text-on-dark'
+          : 'bg-surface hover:bg-royal-tint border-line hover:border-royal/40 text-ink/80 hover:text-royal'
+      }`}
     >
       {isPlaying ? (
         <>
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-royal opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-royal"></span>
           </span>
-          <Volume2 className="w-3.5 h-3.5 text-emerald-400" />
+          <Volume2 className={`w-3.5 h-3.5 ${onDark ? 'text-on-dark' : 'text-royal'}`} />
           <span className="hidden sm:inline">Ambiance On</span>
         </>
       ) : (
         <>
-          <VolumeX className="w-3.5 h-3.5 text-neutral-400 group-hover:text-white" />
+          <VolumeX className={`w-3.5 h-3.5 ${onDark ? 'text-on-dark/70 group-hover:text-on-dark' : 'text-muted group-hover:text-royal'}`} />
           <span className="hidden sm:inline">Play Ambiance</span>
         </>
       )}
